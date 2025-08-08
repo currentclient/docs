@@ -1,67 +1,53 @@
-# CLAUDE.md
+# Mintlify documentation
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+## Working relationship
 
-## Project Overview
+- You can push back on ideas-this can lead to better documentation. Cite sources and explain your reasoning when you do so
+- ALWAYS ask for clarification rather than making assumptions
+- NEVER lie, guess, or make up information
 
-This is a Mintlify documentation site for "CurrentClient" - a documentation starter kit that uses MDX for content and JSON configuration for site structure.
+## Project context
 
-## Development Commands
+- Format: MDX files with YAML frontmatter
+- Config: docs.json for navigation, theme, settings
+- Components: Mintlify components
 
-### Local Development
-```bash
-# Install Mintlify CLI globally (required for development)
-npm i -g mint
+## Content strategy
 
-# Start local development server
-mint dev
+- Document just enough for user success - not too much, not too little
+- Prioritize accuracy and usability of information
+- Make content evergreen when possible
+- Search for existing information before adding new content. Avoid duplication unless it is done for a strategic reason
+- Check existing patterns for consistency
+- Start by making the smallest reasonable changes
 
-# Start on custom port
-mint dev --port 3333
+## Frontmatter requirements for pages
 
-# Update CLI to latest version
-npm mint update
-```
+- title: Clear, descriptive page title
+- description: Concise summary for SEO/navigation
 
-### Validation and Testing
-```bash
-# Check for broken links in documentation
-mint broken-links
-```
+## Writing standards
 
-## Architecture
+- Second-person voice ("you")
+- Prerequisites at start of procedural content
+- Test all code examples before publishing
+- Match style and formatting of existing pages
+- Include both basic and advanced use cases
+- Language tags on all code blocks
+- Alt text on all images
+- Relative paths for internal links
 
-### Configuration Files
-- `docs.json`: Main configuration file defining navigation, theming, and site structure
-- All navigation, tabs, groups, and page organization is controlled through this file
-- Defines color scheme, logos, footer, and contextual options
+## Git workflow
 
-### Content Structure
-- **MDX Files**: All content pages use MDX format with YAML frontmatter
-- **Navigation Tabs**: 
-  - "Guides" tab: Getting started, customization, writing content, AI tools
-  - "API reference" tab: API documentation and endpoint examples
-- **Key Directories**:
-  - `/essentials/`: Core documentation features (markdown, code, images, settings, navigation)
-  - `/ai-tools/`: AI tool integrations (cursor, claude-code, windsurf)
-  - `/api-reference/`: API documentation and endpoint examples
-  - `/snippets/`: Reusable content snippets
-  - `/images/`: Static image assets
-  - `/logo/`: Light and dark theme logos
+- NEVER use --no-verify when committing
+- Ask how to handle uncommitted changes before starting
+- Create a new branch when no clear branch exists for changes
+- Commit frequently throughout development
+- NEVER skip or disable pre-commit hooks
 
-### Content Standards
-- All MDX files require YAML frontmatter with `title` and `description`
-- Uses Mintlify components like `<Card>`, `<Columns>`, `<Steps>`, `<Info>`, `<Frame>`, `<AccordionGroup>`
-- Supports contextual options including copy, view, chatgpt, claude, perplexity, mcp, cursor, vscode
+## Do not
 
-### File Organization
-- Root pages: `index.mdx` (introduction), `quickstart.mdx`, `development.mdx`
-- Content organized by functional groups matching navigation structure
-- OpenAPI specification available at `/api-reference/openapi.json`
-
-## Development Notes
-
-- Local preview runs on `http://localhost:3000` by default
-- Changes automatically deploy to production when pushed to default branch
-- Requires Node.js version 19 or higher
-- Uses Mintlify's deployment system via GitHub app integration
+- Skip frontmatter on any MDX file
+- Use absolute URLs for internal links
+- Include untested code examples
+- Make assumptions - always ask for clarification
