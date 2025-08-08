@@ -18,6 +18,60 @@
             "pages": ["index", "quickstart", "development"]
           },
           {
+            "group": "Account Setup",
+            "pages": [
+              "videos/getting-started/create-account",
+              "videos/getting-started/onboarding",
+              "videos/getting-started/phone-setup",
+              "videos/getting-started/profile-setup"
+            ]
+          },
+          {
+            "group": "Contact Management",
+            "pages": [
+              "videos/contacts/adding-contacts",
+              "videos/contacts/managing-contacts",
+              "videos/contacts/advanced-features"
+            ]
+          },
+          {
+            "group": "Communication",
+            "pages": [
+              "videos/communication/making-calls",
+              "videos/communication/inbox-management"
+            ]
+          },
+          {
+            "group": "Outreach & Broadcasting",
+            "pages": [
+              "videos/outreach/basic-broadcasting",
+              "videos/outreach/advanced-campaigns",
+              "videos/outreach/notifications"
+            ]
+          },
+          {
+            "group": "Integrations",
+            "pages": [
+              "videos/integrations/general-crm",
+              "videos/integrations/wealthbox",
+              "videos/integrations/specialized"
+            ]
+          },
+          {
+            "group": "Mobile App",
+            "pages": [
+              "videos/mobile/app-setup",
+              "videos/mobile/troubleshooting"
+            ]
+          },
+          {
+            "group": "Advanced Features",
+            "pages": [
+              "videos/advanced/video-creation",
+              "videos/advanced/settings-management"
+            ]
+          },
+          {
             "group": "Customization",
             "pages": ["essentials/settings", "essentials/navigation"]
           },
@@ -62,18 +116,18 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Login",
+          "href": "https://app.currentclient.com",
+          "icon": "arrow-up-right"
         },
         {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
+          "anchor": "Install apps",
+          "href": "https://www.currentclient.com/downloads",
+          "icon": "download"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
+          "anchor": "Changelog",
+          "href": "https://www.currentclient.com/changelog",
           "icon": "newspaper"
         }
       ]
@@ -87,13 +141,13 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:dustin@currentclient.com"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Login",
+      "href": "https://app.currentclient.com"
     }
   },
   "contextual": {

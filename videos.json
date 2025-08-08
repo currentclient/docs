@@ -1,0 +1,242 @@
+[
+  {
+    "VideoId": "e56180345ddb49f5883e5e132b54c253",
+    "Title": "How does AgentCore work with CurrentClient",
+    "Tags": ["Contacts"],
+    "Time": "7 min"
+  },
+  {
+    "VideoId": "75b30c3bd6a943ab8659d1e468c57f16",
+    "Title": "How to setup CRM sync",
+    "Tags": ["Contacts"],
+    "Time": "2 min"
+  },
+  {
+    "VideoId": "2d6214ca60774a67a32180cfb9e69f21",
+    "Title": "How to setup notifications to my email",
+    "Tags": ["Settings"],
+    "Time": "5 min"
+  },
+  {
+    "VideoId": "1aad84c3cf4a4aa48e14d3e1769d3c32",
+    "Title": "How to make calls",
+    "Tags": ["Phone"],
+    "Time": "6 min"
+  },
+  {
+    "VideoId": "78c1a175b80e4f7597b4779a239d7b5a",
+    "Title": "How to send a broadcast in batches (Advanced)",
+    "Tags": ["Outreach"],
+    "Time": "6 min"
+  },
+  {
+    "VideoId": "a7d4876705cd4d82a0c1f346e7d99a6d",
+    "Title": "How to send a broadcast",
+    "Tags": ["Outreach"],
+    "Time": "13 min"
+  },
+  {
+    "VideoId": "9d9e202c764342cdbe4e8471bcab5b34",
+    "Title": "How to upload contacts and refresh my database",
+    "Tags": ["Contacts"],
+    "Time": "10 min"
+  },
+  {
+    "VideoId": "e712cf7caac4459fa47585fd5ae5e563",
+    "Title": "How to schedule an individual message",
+    "Tags": ["Inbox"],
+    "Time": "3 min"
+  },
+  {
+    "VideoId": "a8d77ebf04084de4b0a921cc1fdbd656",
+    "Title": "How to use the inbox",
+    "Tags": ["Inbox"],
+    "Time": "9 min"
+  },
+  {
+    "VideoId": "f64a87ddc2804ecfafc1fef53bbe1aea",
+    "Title": "How to create and use segments",
+    "Tags": ["Contacts"],
+    "Time": "6 min"
+  },
+  {
+    "VideoId": "583c40cd7b66418687b08bd248cee7de",
+    "Title": "How to edit a contact",
+    "Tags": ["Contacts"],
+    "Time": "2 min"
+  },
+  {
+    "VideoId": "6badf3c8546c41c3995e686fd9d0b849",
+    "Title": "How to upload contacts",
+    "Tags": ["Contacts"],
+    "Time": "8 min"
+  },
+  {
+    "VideoId": "158bc2d28286461688e1e38e63704a0d",
+    "Title": "How to add an individual contact",
+    "Tags": ["Contacts"],
+    "Time": "1 min"
+  },
+  {
+    "VideoId": "a81561e7a3c84b468469648a773730d2",
+    "Title": "How to remove contacts",
+    "Tags": ["Contacts"],
+    "Time": "2 min"
+  },
+  {
+    "VideoId": "354b5689ea05427baf91e562e1647d99",
+    "Title": "How to update my profile",
+    "Tags": ["Settings"],
+    "Time": "1 min"
+  },
+  {
+    "VideoId": "1cc5524386494da1a82d818623c47cb3",
+    "Title": "How to complete the legal phone registration",
+    "Tags": ["Settings"],
+    "Time": "3 min"
+  },
+  {
+    "VideoId": "3edf4d2e60b14f5cb4b1488ef887ce9a",
+    "Title": "How to onboard new account",
+    "Tags": ["Settings"],
+    "Time": "6 min"
+  },
+  {
+    "VideoId": "f394f37c0a3e4cd0b76440161f33d0a3",
+    "Title": "How to create an account",
+    "Tags": ["Settings"],
+    "Time": "2 min"
+  },
+  {
+    "VideoId": "2425b34f5fb54b9b80007e37054b4275",
+    "Title": "How to never give up",
+    "Tags": ["Settings"],
+    "Time": "4 min"
+  },
+  {
+    "VideoId": "ca48e887609749beb55f25208e88471a",
+    "Title": "How to create a video",
+    "Tags": ["Video"],
+    "Time": "15 min"
+  },
+  {
+    "VideoId": "97f78410268f42f581df1f7fbff3cc4a",
+    "Title": "How to create custom fields",
+    "Tags": ["Contacts"],
+    "Time": "5 min"
+  },
+  {
+    "VideoId": "5c34fbcf24114abaa0946f7069758c12",
+    "Title": "How to set up the Wealthbox integration",
+    "Tags": ["Wealthbox"],
+    "Time": "4 min"
+  },
+  {
+    "VideoId": "5af35be6a56a4158b9207005e34eaa99",
+    "Title": "MedicarePro syncing deep dive",
+    "Tags": ["MedicarePro"],
+    "Time": "7 min"
+  },
+  {
+    "VideoId": "8e16611cb71841df9998213d6c27a500",
+    "Title": "How to triggers action to Wealthbox",
+    "Tags": ["Wealthbox"],
+    "Time": "3 min"
+  },
+  {
+    "VideoId": "21627a59e9bc4b138a4680f867b630bc",
+    "Title": "How conversations notes get added to Wealthbox",
+    "Tags": ["Wealthbox"],
+    "Time": "3 min"
+  },
+  {
+    "VideoId": "661422fbd7e24dd1b4a9143f2553bc2d",
+    "Title": "What data comes from Wealthbox",
+    "Tags": ["Wealthbox"],
+    "Time": "3 min"
+  },
+  {
+    "VideoId": "6e0419823b95420095e5aaca02b9116c",
+    "Title": "How to setup Wealthbox",
+    "Tags": ["Wealthbox"],
+    "Time": "3 min"
+  },
+  {
+    "VideoId": "6a82c3278c5f480fb9f3767c6b772088",
+    "Title": "Setting away status",
+    "Tags": ["Phone", "Settings"],
+    "Time": "1 min"
+  },
+  {
+    "VideoId": "cf9ea882d9224c34b148634d2ff70655",
+    "Title": "Active vs completed conversations",
+    "Tags": ["Phone", "Settings", "Inbox"],
+    "Time": "2 min"
+  },
+  {
+    "VideoId": "70c39ff757314f3e83b00125fabbfbf1",
+    "Title": "Troubleshoot ringing on the mobile app",
+    "Tags": ["Phone", "Settings", "Inbox", "Mobile"],
+    "Time": "2 min"
+  },
+  {
+    "VideoId": "d257c8eb36704a3d8dca3ce30471c78f",
+    "Title": "How to setup A2P 10DLC",
+    "Tags": ["Onboarding", "Settings"],
+    "Time": "2 min"
+  },
+  {
+    "VideoId": "786f061bbef1440599a3675f7db80729",
+    "Title": "How to setup call flow",
+    "Tags": ["Onboarding", "Settings", "Phone"],
+    "Time": "3 min"
+  },
+  {
+    "VideoId": "01bc3f3b338740648a2703faae5aa988",
+    "Title": "How to manage tags",
+    "Tags": ["Contacts"],
+    "Time": "3 min"
+  },
+  {
+    "VideoId": "7dad9b72a56b4d3b9a85793a2bcaa2f7",
+    "Title": "How to create contact segments",
+    "Tags": ["Contacts"],
+    "Time": "3 min"
+  },
+  {
+    "VideoId": "b8fc0c78681442a3a27e3617afbc6ec7",
+    "Title": "How to setup auto replies",
+    "Tags": ["Settings", "Onboarding"],
+    "Time": "2 min"
+  },
+  {
+    "VideoId": "82433f474b9a4c11aea5f3314aacf0be",
+    "Title": "How to setup voicemail",
+    "Tags": ["Settings", "Onboarding", "Phone"],
+    "Time": "1 min"
+  },
+  {
+    "VideoId": "a14548382a3341d6ba5f4935bd037e82",
+    "Title": "How to make a call",
+    "Tags": ["Settings", "Onboarding", "Phone"],
+    "Time": "2 min"
+  },
+  {
+    "VideoId": "d9654fb2e6c648d9a744239043bcb97f",
+    "Title": "How to use the mobile app",
+    "Tags": ["Settings", "Onboarding", "Mobile", "Inbox"],
+    "Time": "4 min"
+  },
+  {
+    "VideoId": "19a45dfcbe33451686da5969e7bc6c81",
+    "Title": "How to block calls",
+    "Tags": ["Phone", "Mobile", "Inbox"],
+    "Time": "1 min"
+  },
+  {
+    "VideoId": "e6f9241c62244a919d1126d0dd813d5e",
+    "Title": "How to add call notes",
+    "Tags": ["Phone", "Mobile"],
+    "Time": "2 min"
+  }
+]

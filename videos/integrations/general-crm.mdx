@@ -1,0 +1,148 @@
+---
+title: "General CRM Setup"
+description: "Learn the basics of connecting CurrentClient with any CRM system"
+---
+
+## How to Setup CRM Sync
+
+<iframe 
+  src="https://www.loom.com/embed/75b30c3bd6a943ab8659d1e468c57f16" 
+  width="100%" 
+  height={400}
+  frameBorder={0} 
+  allowFullScreen
+/>
+
+**Duration:** 2 minutes
+
+Learn the fundamental steps for connecting CurrentClient with most CRM systems, including data mapping and sync configuration.
+
+<Steps>
+  <Step title="Prepare Your CRM">
+    Ensure your CRM has the necessary API access and permissions
+  </Step>
+  <Step title="Configure Connection">
+    Set up the integration in CurrentClient's settings
+  </Step>
+  <Step title="Map Data Fields">
+    Define how contact information flows between systems
+  </Step>
+  <Step title="Test Integration">
+    Verify the sync is working correctly with test data
+  </Step>
+</Steps>
+
+## CRM Integration Benefits
+
+<CardGroup cols={2}>
+  <Card title="Unified Contact Data" icon="database">
+    Keep contact information synchronized across both platforms
+  </Card>
+  <Card title="Activity Tracking" icon="activity">
+    Log all communications and interactions automatically
+  </Card>
+  <Card title="Lead Management" icon="funnel">
+    Streamline lead progression and follow-up processes
+  </Card>
+  <Card title="Reporting Sync" icon="chart-mixed">
+    Combine communication data with sales pipeline metrics
+  </Card>
+</CardGroup>
+
+## Pre-Integration Checklist
+
+<Accordion title="CRM Preparation">
+  **Before starting the integration:**
+  - Verify you have admin access to your CRM
+  - Clean up duplicate contacts in your CRM
+  - Document your current contact fields and data structure
+  - Ensure API access is enabled (may require upgraded plan)
+  - Backup your CRM data before connecting
+</Accordion>
+
+<Accordion title="CurrentClient Preparation">
+  **In your CurrentClient account:**
+  - Complete phone registration and basic setup
+  - Import and organize your current contacts
+  - Set up your tag structure and custom fields
+  - Configure basic notification preferences
+</Accordion>
+
+## Common CRM Connections
+
+### Supported CRMs
+- **Salesforce** - Full bidirectional sync available
+- **HubSpot** - Contact and activity synchronization
+- **Pipedrive** - Pipeline and contact management
+- **Zoho CRM** - Complete integration suite
+- **Microsoft Dynamics** - Enterprise-level integration
+- **Custom CRMs** - API-based connections available
+
+### Integration Types
+
+<Info>
+  **Sync Options:** Most CRM integrations offer both one-way and two-way synchronization. Two-way sync keeps both systems updated automatically.
+</Info>
+
+- **One-way Sync:** Data flows from CRM to CurrentClient only
+- **Two-way Sync:** Data syncs in both directions automatically  
+- **Scheduled Sync:** Updates occur at regular intervals
+- **Real-time Sync:** Changes sync immediately when made
+
+## Field Mapping Strategy
+
+<Steps>
+  <Step title="Identify Core Fields">
+    Map essential fields like name, phone, email, and company
+  </Step>
+  <Step title="Custom Field Alignment">
+    Align custom fields between both systems
+  </Step>
+  <Step title="Tag Mapping">
+    Decide how CRM categories translate to CurrentClient tags
+  </Step>
+  <Step title="Date Field Handling">
+    Configure how dates and timestamps are handled
+  </Step>
+</Steps>
+
+## Integration Troubleshooting
+
+<Accordion title="Common Sync Issues">
+  **Duplicate Records:**
+  - Set up duplicate detection rules in both systems
+  - Use unique identifiers for matching records
+  - Regularly clean up duplicates before syncing
+
+  **Field Mismatches:**
+  - Ensure data types match between systems
+  - Check for character limits on text fields
+  - Verify date formats are compatible
+
+  **Permission Errors:**
+  - Confirm API access is enabled in your CRM
+  - Check that integration user has appropriate permissions
+  - Verify CurrentClient has necessary access tokens
+</Accordion>
+
+## Best Practices
+
+### Data Hygiene
+- Clean up existing data before integration
+- Establish consistent data entry standards
+- Regular audits to maintain data quality
+- Set up validation rules where possible
+
+### Workflow Optimization
+- Define which system is the "source of truth" for each data type
+- Establish clear processes for data conflicts
+- Train team members on integration workflows
+- Monitor integration performance regularly
+
+<Warning>
+  **Integration Limits:** Some CRM integrations have API call limits or data volume restrictions. Review these limitations before setting up high-frequency sync schedules.
+</Warning>
+
+<Tip>
+  **Success Tip:** Start with a basic integration using core fields, then gradually add complexity as you become comfortable with the sync process.
+</Tip>
