@@ -11,11 +11,15 @@
   "navigation": {
     "tabs": [
       {
+        "tab": "Welcome",
+        "pages": ["index"]
+      },
+      {
         "tab": "Guides",
         "groups": [
           {
             "group": "Getting started",
-            "pages": ["index", "quickstart", "development"]
+            "pages": ["guides/index", "quickstart", "development"]
           },
           {
             "group": "Account Setup",
@@ -95,43 +99,33 @@
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "Changelog",
+        "groups": [
+          {
+            "group": "Release Notes",
+            "pages": ["changelog"]
+          }
+        ]
+      },
+      {
+        "tab": "API docs",
         "groups": [
           {
             "group": "API documentation",
-            "pages": ["api-reference/introduction"]
+            "pages": ["api/introduction"]
           },
           {
             "group": "Endpoint examples",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "api/endpoint/get",
+              "api/endpoint/create",
+              "api/endpoint/delete",
+              "api/endpoint/webhook"
             ]
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Login",
-          "href": "https://app.currentclient.com",
-          "icon": "arrow-up-right"
-        },
-        {
-          "anchor": "Install apps",
-          "href": "https://www.currentclient.com/downloads",
-          "icon": "download"
-        },
-        {
-          "anchor": "Changelog",
-          "href": "https://www.currentclient.com/changelog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/cc-full-black.png",
@@ -140,33 +134,25 @@
   "navbar": {
     "links": [
       {
+        "label": "Install app",
+        "href": "https://www.currentclient.com/downloads"
+      },
+      {
         "label": "Support",
-        "href": "mailto:dustin@currentclient.com"
+        "href": "mailto:help@currentclient.com"
       }
     ],
+
     "primary": {
       "type": "button",
       "label": "Login",
       "href": "https://app.currentclient.com"
     }
   },
-  "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
-    ]
-  },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/currentclient",
+      "linkedin": "https://linkedin.com/company/currentclient/"
     }
   }
 }
