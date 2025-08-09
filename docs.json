@@ -8,6 +8,9 @@
     "dark": "#1d4ed8"
   },
   "favicon": "/favicon.ico",
+  "fonts": {
+    "family": "Poppins"
+  },
   "navigation": {
     "tabs": [
       {
@@ -136,13 +139,8 @@
       {
         "label": "Install app",
         "href": "https://www.currentclient.com/downloads"
-      },
-      {
-        "label": "Support",
-        "href": "mailto:help@currentclient.com"
       }
     ],
-
     "primary": {
       "type": "button",
       "label": "Login",
