@@ -57,6 +57,24 @@
             "pages": ["guides/getting-started/index", "guides/getting-started/signup", "guides/getting-started/install-apps"]
           },
           {
+            "group": "Porting number",
+            "pages": [
+              		{
+                    "group": "Google Voice",
+                    "icon": "/images/logos/google-voice.svg",
+                    "pages": ["guides/porting-number/google-voice/google-voice-personal", "guides/porting-number/google-voice/google-voice-business"]
+                  },
+                  "guides/porting-number/vonage"
+            ]
+          },
+          {
+            "group": "Integrations",
+            "pages": [
+              "guides/integrations/slack",
+              "guides/integrations/zapier"
+            ]
+          },
+          {
             "group": "Support",
             "pages": []
           }
