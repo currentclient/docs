@@ -74,12 +74,6 @@
     "dark": "/logo/cc-full-white.png"
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Install app",
-        "href": "https://www.currentclient.com/downloads"
-      }
-    ],
     "primary": {
       "type": "button",
       "label": "Login",
