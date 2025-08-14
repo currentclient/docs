@@ -36,7 +36,7 @@
         "groups": [
           {
             "group": "Getting started",
-            "pages": ["guides/getting-started/index", "guides/getting-started/signup", "guides/getting-started/install-apps"]
+            "pages": ["guides/getting-started/index", "guides/getting-started/signup", "guides/getting-started/install-apps", "guides/getting-started/register-firm", "guides/getting-started/port-number"]
           },
           {
             "group": "Porting number",
