@@ -52,13 +52,18 @@
           {
             "group": "Integrations",
             "pages": [
+              {
+                "group": "Wealthbox",
+                "icon": "https://static.currentclient.com/v1/logos/wealthbox-avatar.png",
+                "pages": ["guides/integrations/wealthbox/setup", "guides/integrations/wealthbox/data-sync", "guides/integrations/wealthbox/triggers"]
+              },
               "guides/integrations/slack",
               "guides/integrations/zapier"
             ]
           },
           {
-            "group": "Support",
-            "pages": []
+            "group": "Resources",
+            "pages": ["/guides/resources/support", "/guides/resources/write-a-review"]
           }
         ]
       },

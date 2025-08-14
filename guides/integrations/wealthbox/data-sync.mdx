@@ -1,0 +1,245 @@
+---
+title: "Data sync"
+description: "Understanding how data flows between CurrentClient and Wealthbox"
+---
+
+# How data syncs with Wealthbox
+
+Understanding what data flows between CurrentClient and Wealthbox helps you make the most of the integration.
+
+<Tip>**Sync frequency:** Data is refreshed every morning.</Tip>
+
+
+## Data flow overview
+
+<iframe 
+  src="https://www.loom.com/embed/661422fbd7e24dd1b4a9143f2553bc2d?hideEmbedTopBar=true" 
+  width="100%" 
+  height={400}
+  allowFullScreen
+/>
+
+## What syncs from Wealthbox to CurrentClient?
+
+<CardGroup cols={2}>
+  <Card title="Contact information" icon="id-badge">
+    Names, phone numbers, email and address information
+  </Card>
+  <Card title="Contact tags" icon="tag">
+    Existing client tags and interaction history
+  </Card>
+  <Card title="Contact type and status" icon="user-check">
+    Contact type and status
+  </Card>
+  <Card title="Any custom fields" icon="gears">
+    Any custom fields you setup and want to sync to CurrentClient
+  </Card>
+</CardGroup>
+
+## What syncs from CurrentClient to Wealthbox?
+
+<CardGroup cols={2}>
+  <Card title="Text conversations" icon="comments">
+    Complete message threads with timestamps
+  </Card>
+  <Card title="Call records" icon="phone">
+    Call logs with duration and notes
+  </Card>
+</CardGroup>
+
+## Detailed field mapping
+
+Here's exactly what data syncs from Wealthbox to CurrentClient:
+
+<AccordionGroup>
+  <Accordion title="Core contact fields">
+    
+    **Basic Information:**
+    <ParamField body="FirstName" type="string">
+      Synced from Wealthbox `first_name` field
+    </ParamField>
+    
+    <ParamField body="LastName" type="string">
+      Synced from Wealthbox `last_name` field
+    </ParamField>
+    
+    <ParamField body="Nickname" type="string">
+      Synced from Wealthbox `nickname` field
+    </ParamField>
+    
+    <ParamField body="BirthDate" type="date">
+      Synced from Wealthbox `birth_date` field
+    </ParamField>
+    
+    <ParamField body="AvatarUrl" type="string">
+      Synced from Wealthbox `image` field (if not default person.png)
+    </ParamField>
+
+    **Contact Information:**
+    <ParamField body="Phone" type="string">
+      Primary phone number from Wealthbox contact
+    </ParamField>
+    
+    <ParamField body="Email" type="string">
+      Primary email address from Wealthbox contact
+    </ParamField>
+
+    **Address Information:**
+    <ParamField body="Address1" type="string">
+      Primary address `street_line_1` from Wealthbox
+    </ParamField>
+    
+    <ParamField body="Address2" type="string">
+      Primary address `street_line_2` from Wealthbox
+    </ParamField>
+    
+    <ParamField body="City" type="string">
+      Primary address `city` from Wealthbox
+    </ParamField>
+    
+    <ParamField body="State" type="string">
+      Primary address `state` from Wealthbox
+    </ParamField>
+    
+    <ParamField body="Zip" type="string">
+      Primary address `zip_code` from Wealthbox
+    </ParamField>
+    
+  </Accordion>
+
+  <Accordion title="System tracking fields">
+    These fields help maintain the connection between systems:
+    
+    <ParamField body="SourceId" type="string">
+      The unique Wealthbox contact ID for maintaining sync relationships
+    </ParamField>
+    
+    <ParamField body="SourceType" type="string">
+      Always set to "WEALTHBOX" to identify the data source
+    </ParamField>
+    
+    <ParamField body="SourceSyncFlow" type="string">
+      Unique identifier for the sync flow configuration
+    </ParamField>
+    
+    <ParamField body="SourceMeta" type="object">
+      Contains reference IDs for maintaining data relationships:
+      - `SourceEmailId` - Primary email reference ID
+      - `SourcePhoneId` - Primary phone reference ID  
+      - `SourceAddressId` - Primary address reference ID
+      - `SourceVisibleToId` - Visibility permissions reference
+    </ParamField>
+  </Accordion>
+
+  <Accordion title="Household information">
+    If the contact belongs to a household in Wealthbox, these fields sync to maintain family and business relationships:
+    
+    <ParamField body="HouseholdId" type="string">
+      Unique household identifier from Wealthbox `id`
+    </ParamField>
+    
+    <ParamField body="HouseholdName" type="string">
+      Household display name from Wealthbox `name`
+    </ParamField>
+    
+    <ParamField body="HouseholdTitle" type="string">
+      Household title or description from Wealthbox `title`
+    </ParamField>
+  </Accordion>
+
+  <Accordion title="Phone numbers">
+    Every phone number from Wealthbox gets transferred as an array of phone objects:
+    
+    <ParamField body="Numbers" type="array">
+      Array of phone number objects, each containing:
+    </ParamField>
+    
+    <ParamField body="Phone" type="string">
+      Cleaned and formatted phone number
+    </ParamField>
+    
+    <ParamField body="Label" type="string">
+      Phone type classification (Mobile, Work, Home, etc.)
+    </ParamField>
+    
+    <ParamField body="IsPreferred" type="boolean">
+      Whether this is the primary contact number for the client
+    </ParamField>
+    
+    <ParamField body="Meta" type="object">
+      Source metadata including Wealthbox phone ID and type classification
+    </ParamField>
+  </Accordion>
+
+  <Accordion title="Tags">
+    CurrentClient automatically creates reads the tags from your Wealthbox contact and creates a matching tag on the CurrentClient contact.
+  </Accordion>
+
+  <Accordion title="Classification and Visibility">
+    CurrentClient automatically creates the following tags from your Wealthbox contact to help identify the most common fields that are used for classification and visibility.
+
+    **Contact Classification Tags:**
+    <ParamField body="Contact Type" type="tag">
+      Automatically created from Wealthbox contact type field
+    </ParamField>
+    
+    <ParamField body="Record Type" type="tag">
+      Generated from Wealthbox record type classification
+    </ParamField>
+    
+    <ParamField body="Contact Status" type="tag">
+      Synced from Wealthbox contact status field
+    </ParamField>
+    
+    <ParamField body="Contact Source" type="tag">
+      Created from Wealthbox source tracking information
+    </ParamField>
+    
+    <ParamField body="Gender" type="tag">
+      Generated from Wealthbox gender field (if populated)
+    </ParamField>
+
+    **Assignment & Visibility Tags:**
+    <ParamField body="Assigned To" type="tag">
+      Mapped from Wealthbox user assignments to team member names
+    </ParamField>
+    
+    <ParamField body="Visible To" type="tag">
+      Created from Wealthbox visibility permissions and user groups
+    </ParamField>
+    
+    <ParamField body="Wealthbox Tags" type="tag">
+      All existing tags from Wealthbox are preserved and synced
+    </ParamField>
+    
+    <ParamField body="Household Tags" type="tag">
+      Generated for contacts that belong to households (if applicable)
+    </ParamField>
+  </Accordion>
+
+  <Accordion title="Custom fields (optional)">
+    
+    If you select to sync custom fields, all custom fields will be synced to CurrentClient as well.
+    
+    <Tip>
+    **Custom field setup:** Contact support to configure custom field mappings that fit your specific Wealthbox setup and business needs.
+    </Tip>
+  </Accordion>
+</AccordionGroup>
+
+
+## Conversation notes sync
+
+Learn how your CurrentClient conversations automatically become notes in Wealthbox:
+
+<iframe 
+  src="https://www.loom.com/embed/21627a59e9bc4b138a4680f867b630bc?hideEmbedTopBar=true" 
+  width="100%" 
+  height={400}
+  allowFullScreen
+/>
+
+<Note>
+**Conversation summaries:** CurrentClient can automatically create conversation summaries that get added as notes to your Wealthbox client records.
+</Note>
+

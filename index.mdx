@@ -80,17 +80,22 @@ import { iconActionColor } from "/snippets/colors.mdx";
     <h2 className="text-2xl text-gray-900 dark:text-white font-normal mb-6">Popular guides</h2>
     <Columns cols={3}>
 
-      <Card title="Port number" icon="phone-volume" href="/components/columns" arrow="true" 
+      <Card title="Port number" icon="phone-volume" href="/guides/getting-started/port-number" arrow="true" 
       color={iconActionColor}
       >
         Transfer your existing phone number to CurrentClient
       </Card>
-      <Card title="Setup automations" icon="bolt" href="/components/columns" arrow="true" color={iconActionColor}>
+      <Card title="Connect Wealthbox" icon="https://static.currentclient.com/v1/logos/wealthbox-avatar.png" href="/guides/integrations/wealthbox/setup" arrow="true" 
+      color={iconActionColor}
+      >
+        Connect your Wealthbox CRM to CurrentClient
+      </Card>
+      {/* <Card title="Setup automations" icon="bolt" href="/components/columns" arrow="true" color={iconActionColor}>
         Configure birthdays, anniversaries and other client touchpoints
       </Card>
       <Card title="Build phone menu" icon="route" href="/components/columns" arrow="true" color={iconActionColor}>
         Setup your phone menu to route calls to the right place
-      </Card>      
+      </Card>       */}
     </Columns>
 
   </div>
@@ -98,13 +103,13 @@ import { iconActionColor } from "/snippets/colors.mdx";
   <div>
     <h2 className="text-2xl text-gray-900 dark:text-white font-normal mb-6">Getting help</h2>
     <Columns cols={3}>
-      <Card title="Call us" icon="phone" href="/components/columns" arrow="true" color={iconActionColor}>
+      <Card title="Call us" icon="phone" href="/guides/resources/support" arrow="true" color={iconActionColor}>
         Speak directly with our support team
       </Card>
-      <Card title="Email us" icon="envelope" href="/components/columns" arrow="true" color={iconActionColor}>
+      <Card title="Email us" icon="envelope" href="/guides/resources/support" arrow="true" color={iconActionColor}>
         Send us an email for detailed assistance
       </Card>
-      <Card title="Text us" icon="comments" href="/components/columns" arrow="true" color={iconActionColor}>
+      <Card title="Text us" icon="comments" href="/guides/resources/support" arrow="true" color={iconActionColor}>
         Get quick help via text message
       </Card>
     </Columns>
