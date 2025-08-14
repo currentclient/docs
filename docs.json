@@ -10,6 +10,8 @@
   "favicon": "/favicon.ico",
   "fonts": {
     "family": "Airbnb Cereal",
+    "source": "https://static.currentclient.com/v1/fonts/AirbnbCerealBook.woff",
+    "format": "woff2",
     "heading": {
       "family": "Airbnb Cereal",
       "weight": 700,
@@ -17,9 +19,9 @@
       "format": "woff2"
     },
     "body": {
-      "family": "Airbnb Cereal", 
+      "family": "Airbnb Cereal",
       "weight": 400,
-      "source": "https://static.currentclient.com/v1/fonts/AirbnbCerealBook.woff",
+      "source": "https://static.currentclient.com/v1/fonts/AirbnbCerealMedium.woff",
       "format": "woff2"
     }
   },  
