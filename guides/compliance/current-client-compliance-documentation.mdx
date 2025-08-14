@@ -1,0 +1,78 @@
+---
+title: "CurrentClient Compliance Documentation"
+description: "Meeting SEC/FINRA Communication Retention & Supervision Rules."
+---
+
+## 1. Overview
+
+This document describes how CurrentClient meets **SEC Rule 17a-4**, the **Investment Advisers Act of 1940**, and **FINRA Rules 3110 & 4511** recordkeeping and supervision requirements.
+
+**Audience:** Compliance officers, auditors, and regulators reviewing the use of CurrentClient for compliant communications archiving.
+
+
+## 2. Record Capture
+
+CurrentClient automatically captures:
+
+* **Text Messages (SMS/MMS)** – Full message content including media files.
+* **Metadata** – Sender/recipient, date/time, message ID, delivery status.
+
+Records are captured in real time and stored immediately in a secure archive.
+
+
+## 3. Retention & Regulatory Compliance
+
+* Retained for a **minimum of 5 years**; first 2 years instantly retrievable.
+* Stored in **AWS S3 with object versioning enabled**.
+* Original records cannot be overwritten — edits/deletions create a **new immutable version** while retaining the original.
+* Version history includes timestamps, user/process changes, and access to prior versions.
+* Aligns with **SEC Rule 17a-4(f)** 2022 amendments allowing version-controlled, audit-capable systems.
+
+
+## 4. Integrity & Security
+
+* **Version Control** – Preserves all historical versions of a record.
+* **Audit Logging** – Tracks access, exports, and modifications.
+* **Encryption** – TLS 1.2+ in transit, AES-256 at rest.
+* **Access Controls** – Role-based permissions to restrict who can view, search, or export records.
+
+
+## 5. Supervision & Review Tools
+
+* **Searchable Archive** – Search by client, keyword, date range, or record type.
+* **Supervision Workflows** – CurrentClient supports supervision by:
+
+  * Sending all captured messaging data to the firm’s **chosen third-party archiving system** for review, or
+  * **Co-locating** all captured messaging data into the firm’s **existing email archive** so their current supervision workflows apply.
+* **Review Logs** – If the firm uses CurrentClient’s direct archive export, activity logs record when reviews occur and by whom.
+
+
+## 6. Retrieval for Regulatory Requests
+
+* **Export Capabilities** – CSV, PDF, and media formats for regulators.
+* **Time-Stamped Certification** – Confirms record authenticity.
+* **No Gaps in Records** – Continuous capture with no user-side deletion.
+
+
+## 7. Advisor Responsibilities
+
+Advisors must:
+
+* Maintain a **written communications retention and supervision policy**.
+* Periodically review communications for compliance issues.
+* Ensure all business messaging takes place through CurrentClient or other approved channels.
+
+
+## 8. CurrentClient Commitment
+
+CurrentClient is committed to:
+
+* Providing advisors with a compliant, secure messaging archive.
+* Maintaining system compliance with SEC/FINRA rules.
+* Supporting retrieval requests during regulatory audits.
+
+
+## Related Articles
+<Columns cols={2}>
+  <Card title="CurrentClient Compliance Documentation" href="/compliance/archiving-provider-acknowledgment" />
+</Columns>

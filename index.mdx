@@ -4,93 +4,109 @@ description: "Everything you need to get started with CurrentClient"
 mode: "custom"
 ---
 
-<div className="flex flex-col lg:flex-row items-center justify-between py-16 px-4 max-w-6xl mx-auto">
+import { Button } from "/snippets/button.mdx";
+import { iconActionColor } from "/snippets/colors.mdx";
+
+
+<div className="flex flex-col lg:flex-row  justify-between py-16 px-4 max-w-6xl mx-auto">
   <div className="lg:w-1/2 lg:pr-12 mb-8 lg:mb-0">
-    <h1 className="text-5xl font-bold text-gray-900 dark:text-white mb-6">
-      Get started with CurrentClient
-    </h1>
-    <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
-Learn how to get started with the CurrentClient app, stay updated on changes, and learn how to use our API.
+    <div className="flex flex-col mb-6 space-y-6">
+      <h1 className="text-5xl text-gray-900 dark:text-white font-medium">
+        Welcome to CurrentClient.
+      </h1>
+          
+      
+      <div className="flex flex-col bg-gray-50 dark:bg-gray-950 rounded-lg px-6 py-4 space-y-4">
+
+    <p className="text-lg text-gray-600 dark:text-gray-300">
+      "We are super excited to have you here! We know how it is learning new tech. Feels a bit overwhelming and can be hard to know where to start. You are in the right place to learn how to get up and running so you can get the most from the app."
     </p>
+
+<div className="flex flex-row items-center space-x-4">
+<div className="flex ring-2 ring-gray-200 dark:ring-gray-800 rounded-full">
+
+    <img
+      src="/images/dustin-24-square-grey.png"
+      alt="Dustin Avatar"
+      className="w-12 h-12 rounded-full"
+    />
+    </div>
+
+    <p className="text-sm text-gray-500 dark:text-gray-400 mt-2">
+      — Dustin Belliston, Founder 
+    </p>
+
+    </div>
+    </div>
+    </div>
+
+    <div className="flex flex-row items-center space-x-4">
+
+      <Button
+        label="New? Start here"
+        href="/guides"
+      />
+    </div>
 
   </div>
   <div className="lg:w-1/2">
     <img
       src="/images/apppair.png"
       alt="CurrentClient App Interface"
-      className="w-1/2 h-auto rounded-lg shadow-lg mx-auto"
+      className="w-2/3 h-auto rounded-lg mx-auto"
     />
   </div>
 </div>
 
-<div className="max-w-6xl mx-auto px-4 py-16">
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-    
-    <div className="bg-white dark:bg-gray-900 rounded-xl p-8 shadow-sm hover:shadow-md transition-all border border-gray-100 dark:border-gray-700">
-      <div className="flex items-center mb-4">
-        <div className="w-12 h-12 bg-gray-50 dark:bg-gray-900 rounded-lg flex items-center justify-center mr-4 border border-gray-200 dark:border-gray-600">
-          <svg className="w-6 h-6 text-gray-600 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
-          </svg>
-        </div>
-        <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-          Guides
-        </h3>
-      </div>
-      <p className="text-gray-600 dark:text-gray-300 mb-6">
-        Step-by-step tutorials to help you get started and master every feature of CurrentClient.
-      </p>
-      <a href="/guides" className="inline-flex items-center text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors">
-        Explore Guides
-        <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
-        </svg>
-      </a>
-    </div>
+<div className="max-w-6xl mx-auto px-4 py-16 space-y-12">
+  <div>
+    <h2 className="text-2xl text-gray-900 dark:text-white font-normal mb-6">Getting started</h2>
+    <Columns cols={3}>
+      <Card title="Signup" icon="user-plus" href="/components/columns" arrow="true" 
+      color={iconActionColor}
+      >
+        Create your CurrentClient account and get started
+      </Card>
+      <Card title="Install apps" icon="download" href="/components/columns" arrow="true" color={iconActionColor}>
+        Download and install the CurrentClient desktop and mobile app
+      </Card>
+      <Card title="Initial setup" icon="play"  href="/components/columns" arrow="true" color={iconActionColor}>
+        Configure your core settings to start strong out of the gate
+      </Card>
+    </Columns>
+  </div>
 
-    <div className="bg-white dark:bg-gray-900 rounded-xl p-8 shadow-sm hover:shadow-md transition-all border border-gray-100 dark:border-gray-700">
-      <div className="flex items-center mb-4">
-        <div className="w-12 h-12 bg-gray-50 dark:bg-gray-900 rounded-lg flex items-center justify-center mr-4 border border-gray-200 dark:border-gray-600">
-          <svg className="w-6 h-6 text-gray-600 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-          </svg>
-        </div>
-        <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-          Changelog
-        </h3>
-      </div>
-      <p className="text-gray-600 dark:text-gray-300 mb-6">
-        Stay up to date with the latest features, improvements, and bug fixes in CurrentClient.
-      </p>
-      <a href="/changelog" className="inline-flex items-center text-gray-700 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 font-medium transition-colors">
-        View Updates
-        <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
-        </svg>
-      </a>
-    </div>
+  <div>
+    <h2 className="text-2xl text-gray-900 dark:text-white font-normal mb-6">Popular guides</h2>
+    <Columns cols={3}>
 
-    <div className="bg-white dark:bg-gray-900 rounded-xl p-8 shadow-sm hover:shadow-md transition-all border border-gray-100 dark:border-gray-700">
-      <div className="flex items-center mb-4">
-        <div className="w-12 h-12 bg-gray-50 dark:bg-gray-900 rounded-lg flex items-center justify-center mr-4 border border-gray-200 dark:border-gray-600">
-          <svg className="w-6 h-6 text-gray-600 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
-          </svg>
-        </div>
-        <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-          API Documentation
-        </h3>
-      </div>
-      <p className="text-gray-600 dark:text-gray-300 mb-6">
-        Complete reference documentation for integrating with CurrentClient's powerful API.
-      </p>
-      <a href="/api/introduction" className="inline-flex items-center text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 font-medium transition-colors">
-        Browse API Docs
-        <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
-        </svg>
-      </a>
-    </div>
+      <Card title="Port number" icon="phone-volume" href="/components/columns" arrow="true" 
+      color={iconActionColor}
+      >
+        Transfer your existing phone number to CurrentClient
+      </Card>
+      <Card title="Setup automations" icon="bolt" href="/components/columns" arrow="true" color={iconActionColor}>
+        Configure birthdays, anniversaries and other client touchpoints
+      </Card>
+      <Card title="Build phone menu" icon="route" href="/components/columns" arrow="true" color={iconActionColor}>
+        Setup your phone menu to route calls to the right place
+      </Card>      
+    </Columns>
 
+  </div>
+
+  <div>
+    <h2 className="text-2xl text-gray-900 dark:text-white font-normal mb-6">Getting help</h2>
+    <Columns cols={3}>
+      <Card title="Call us" icon="phone" href="/components/columns" arrow="true" color={iconActionColor}>
+        Speak directly with our support team
+      </Card>
+      <Card title="Email us" icon="envelope" href="/components/columns" arrow="true" color={iconActionColor}>
+        Send us an email for detailed assistance
+      </Card>
+      <Card title="Text us" icon="comments" href="/components/columns" arrow="true" color={iconActionColor}>
+        Get quick help via text message
+      </Card>
+    </Columns>
   </div>
 </div>

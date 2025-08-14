@@ -43,3 +43,11 @@ Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/sett
 
 - [Mintlify documentation](https://mintlify.com/docs)
 - [Mintlify community](https://mintlify.com/community)
+
+
+## Inspiration
+
+- https://support.openphone.com/getting-started/introduction
+- https://docs.anthropic.com/en/home
+- https://docs.pinecone.io/release-notes/2025
+- https://docs.pinecone.io/integrations/overview

@@ -1,0 +1,104 @@
+export const Home = ({
+  bgImage,
+  heading,
+  subheading,
+  align = "left",
+  bgPosition = "center",
+  overlayClass = "bg-black/30",
+  children
+}) => {
+  const alignMap = {
+    left: "items-start text-left",
+    center: "items-center text-center",
+    right: "items-end text-right",
+  };
+
+return (
+
+<section
+      aria-label="Hero banner"
+      className="relative w-full h-[460px] flex pb-10 mb-10"
+    >
+<div
+aria-hidden="true"
+className="absolute inset-0 bg-cover bg-no-repeat"
+style={{ backgroundImage: `url(${bgImage})`, backgroundPosition: bgPosition }}
+/>
+<div aria-hidden="true" className={`absolute inset-0 ${overlayClass}`} />
+
+      <div
+        className={`relative z-10 mx-auto w-full max-w-[1200px] px-5 sm:px-10 flex flex-col justify-end ${alignMap[align]}`}
+      >
+        <h1 className="mb-3 text-3xl sm:text-4xl md:text-5xl font-bold text-black drop-shadow">
+          {heading}
+        </h1>
+        {children}
+      </div>
+    </section>
+
+);
+}
+
+export const AuthorsMeta = ({
+  avatars = [],
+  labelDesktop = "By Team",
+  labelMobile = "1 author",
+  articlesCount = 3,
+  sizeClass = "h-6 w-6",
+  className = "",
+}) => {
+  return (
+    <div className={`mt-4 ${className}`}>
+      <div className="flex items-center gap-2" aria-hidden="true">
+        <div className="flex flex-row">
+          <div
+            className="flex shrink-0 items-center justify-center rounded-full leading-normal sm:flex-row"
+            data-testid="avatars"
+          >
+            <img
+              width="24"
+              height="24"
+              src="https://static.intercomassets.com/avatars/4662215/square_128/logo-white-circle-200-1750340323.png"
+              className={[
+                "inline-flex items-center justify-center rounded-full",
+                "bg-primary text-lg font-bold leading-6 text-primary-text",
+                "shadow-sm",
+                sizeClass,
+              ].join(" ")}
+            />
+          </div>
+        </div>
+
+        <span className="line-clamp-1 flex flex-wrap items-center text-base text-black/60 dark:text-white/70">
+          <span className="hidden sm:inline">{labelDesktop}</span>
+          <span className="inline sm:hidden">{labelMobile}</span>
+          <svg
+            width="4"
+            height="4"
+            viewBox="0 0 16 16"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            className="mx-2"
+          >
+            <path d="M15 8C15 4.13401 11.866 1 8 1C4.13401 1 1 4.13401 1 8C1 11.866 4.13401 15 8 15C11.866 15 15 11.866 15 8Z" />
+          </svg>
+          {articlesCount} articles
+        </span>
+      </div>
+    </div>
+
+);
+}
+
+export const HomeWrapper = ({
+  as: Tag = "div",
+  className = "",
+  children,
+}) => {
+  return (
+    <Tag className={`mx-auto w-full max-w-[1440px] px-5 sm:px-10 ${className}`}>
+      {children}
+    </Tag>
+  );
+
+}
