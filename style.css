@@ -2,3 +2,8 @@ ul > li > div > img, ul > li > a > img {
     background-color: white !important;
     border-radius: 2px !important;
 }
+
+.card.block > div > div > img {
+    background-color: white !important;
+    border-radius: 2px !important;
+}
