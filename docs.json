@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "CurrentClient Help Center",
+  "theme": "almond",
+  "name": "CurrentClient | Help Center",
   "colors": {
     "primary": "#3b82f6",
     "light": "#60a5fa",
@@ -10,18 +10,18 @@
   "favicon": "/favicon.ico",
   "fonts": {
     "family": "Airbnb Cereal",
-    "source": "https://static.currentclient.com/v1/fonts/AirbnbCerealBook.woff",
+    "source": "https://static.currentclient.io/v1/fonts/AirbnbCerealBook.woff",
     "format": "woff",
     "heading": {
       "family": "Airbnb Cereal",
       "weight": 700,
-      "source": "https://static.currentclient.com/v1/fonts/AirbnbCerealBold.woff",
+      "source": "https://static.currentclient.io/v1/fonts/AirbnbCerealBold.woff",
       "format": "woff"
     },
     "body": {
       "family": "Airbnb Cereal",
       "weight": 400,
-      "source": "https://static.currentclient.com/v1/fonts/AirbnbCerealMedium.woff",
+      "source": "https://static.currentclient.io/v1/fonts/AirbnbCerealMedium.woff",
       "format": "woff"
     }
   },  
@@ -104,8 +104,5 @@
       "x": "https://x.com/currentclient",
       "linkedin": "https://linkedin.com/company/currentclient/"
     }
-  },
-  "background": {
-    "decoration": "gradient"
   }
 }
