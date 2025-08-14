@@ -1,79 +1,103 @@
 ---
-title: "Port your number"
-description: "Transfer your existing phone number to CurrentClient so your clients can reach you using the same number they know."
-icon: "phone-forwarded"
+title: 'Port a number'
+description: "Keep your existing phone number when you switch to CurrentClient"
+icon: "arrow-right-arrow-left"
 ---
 
-# Port your number (optional)
+import { iconActionColor } from "/snippets/colors.mdx";
 
-Want to keep using your existing phone number with CurrentClient? No problem! Porting your number means your clients won't even notice the switch - they'll just call the same number they always have.
+# How do I port my number?
 
-## Before you start
+Want to keep using your existing phone number? No problem! We've put a lot of work into our porting process to make it as smooth as possible and have it dialed in. Here's what you can expect.
 
-Number porting is completely optional, but here's why you might want to do it:
-
-- **No client confusion** - Keep the same number your clients know and trust
-- **Maintain your brand** - Continue using the number on your business cards and marketing
-- **Seamless transition** - No need to notify clients about a new number
-
-## What you'll need
-
-To port your number, gather these items:
-
-- Your current phone bill or account statement
-- Account number with your current provider
-- PIN or password for your current account
-- Authorized contact information (must match your current account)
-
-<Note>
-**Important:** Don't cancel your current service until the port is complete! We'll handle the transfer process and your old service will automatically end when the port finishes.
-</Note>
-
-## The porting process
+## How porting works
 
 <Steps>
+  <Step title="Gather information from your current carrier">
+    Each carrier requires different information - we'll show you exactly what to find and where to find it.
+  </Step>
+  
   <Step title="Submit your port request">
-    Provide your current number details and account information through the CurrentClient dashboard.
+    Fill out the [port request form](https://app.currentclient.com/app/settings/port-number) in the CurrentClient app with your carrier information.
   </Step>
   
-  <Step title="We handle the paperwork">
-    Our team submits the port request to your current carrier and manages all the technical details.
+  <Step title="We handle the nitty gritty details">
+    We submit your request to the carriers and work with them to get it approved. If there are any issues, we'll loop you in.
   </Step>
   
-  <Step title="Wait for approval">
-    Most ports take 3-5 business days, though some carriers may take longer. We'll keep you updated throughout the process.
+  <Step title="Port gets approved and scheduled">
+    Once approved, the port gets scheduled 7-10 days in the future, typically very early AM (1-2 AM) so it's ready when you wake up.
   </Step>
-  
-  <Step title="Port completion">
-    Once approved, your number will automatically switch to CurrentClient. Your old service ends and you're all set!
+
+  <Step title="Cancel old service">
+    Once the port is approved and scheduled, you can cancel your old service. 
   </Step>
 </Steps>
 
-## Common porting scenarios
+<Callout type="info">
+**Timeline:** Most ports are approved within 3-5 business days and scheduled 7-10 days out from approval.
+</Callout>
 
-### From Google Voice
-If you're moving from Google Voice, we have [detailed guides](/guides/porting-number/google-voice) to walk you through the process for both personal and business accounts.
+## What to expect after your port
 
-### From traditional carriers
-Most traditional phone carriers (Verizon, AT&T, etc.) work smoothly with our porting process. The main requirement is having your account information ready.
+<CardGroup cols={2}>
+  <Card title="Calls" icon="phone">
+    Working immediately after the port completes. If any issues, we escalate right away.
+  </Card>
+  <Card title="Texting" icon="message">
+    Inbound texts work immediately. Outbound texts can take up to 48 hours to register with carriers.
+  </Card>
+</CardGroup>
 
-### From VoIP services
-Many VoIP providers support number porting, though the process can vary. We'll work with you to ensure a smooth transition.
+## Choose your current carrier
 
-## During the port
+Select your current phone provider to see step-by-step porting instructions:
 
-While your number is being ported:
+<CardGroup cols={2}>
+  <Card title="Google Voice Personal" icon="/images/logos/google-voice.svg" href="/guides/porting/google-voice/personal">
+    Port from your personal Google Voice account
+  </Card>
+  <Card title="Google Voice Business" icon="/images/logos/google-voice.svg" href="/guides/porting/google-voice/business">
+    Port from Google Workspace Voice
+  </Card>
+  <Card title="Vonage" icon="/images/logos/vonage.svg" href="/guides/porting/vonage">
+    Port from Vonage business phone service
+  </Card>
+</CardGroup>
 
-- **Keep your old service active** - Don't cancel until the port is complete
-- **You can still use CurrentClient** - We'll provide a temporary number if needed
-- **Stay in touch** - We'll update you on the progress every step of the way
+<Callout type="note">
+**Don't see your carrier?** No worries! Most carriers follow similar processes. Just reach out and we'll help you gather the right information.
+</Callout>
 
-## Troubleshooting
+## Frequently asked questions
 
-**Port taking longer than expected?** Sometimes carriers need additional verification. We'll reach out if we need any extra information from you.
+<AccordionGroup>
+  <Accordion title="Is there any downtime during the port?">
+    You can use your number normally while we wait for the scheduled port date. The actual cutover happens quickly and in most cases you'll notice no downtime.
+    
+    In rare cases, we may need to work with the phone carriers to resolve issues, but we'll jump on this right away and keep you informed throughout the process.
+  </Accordion>
 
-**Need to cancel a port?** You can cancel anytime before it's approved, though we'd be happy to help resolve any issues first.
+  <Accordion title="Can I port multiple numbers at once?">
+    Yes! If you have multiple numbers to port, just reach out to us and we can batch them together to make the process easier.
+  </Accordion>
 
----
+  <Accordion title="Do I need to do anything to get the port approved?">
+    Just gather the information from your existing carrier and submit the port request in the app. We handle all the technical coordination with the carriers after that.
+  </Accordion>
 
-**All done with setup?** You're ready to start using CurrentClient! Check out our guides on making calls, setting up automations, and more.
+  <Accordion title="What if my port gets rejected?">
+    No worries - this is rare, but if it happens, we'll work with you to identify what information needs to be corrected and resubmit quickly.
+  </Accordion>
+  <Accordion title="What if my carrier is not listed here?">
+    All good! We can port from most carriers. Just fill out the port request form the best you can, most carriers have the same information.
+  </Accordion>
+</AccordionGroup>
+
+## Start a port request
+
+Once you have those things ready to go, head over to the port request form in the app and fill out the simple form to provide that information to us.
+
+<Card title="Start port request" icon="arrow-pointer" href="https://app.currentclient.com/app/settings/port-number" arrow="true" color={iconActionColor}>
+  Hop into the app and start the port request process
+</Card>
