@@ -66,24 +66,6 @@
             "pages": ["/guides/resources/support", "/guides/resources/write-review"]
           }
         ]
-      },
-      {
-        "tab": "API docs",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": ["api/introduction"]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api/endpoint/get",
-              "api/endpoint/create",
-              "api/endpoint/delete",
-              "api/endpoint/webhook"
-            ]
-          }
-        ]
       }
     ]
   },

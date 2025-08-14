@@ -51,3 +51,23 @@ Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/sett
 - https://docs.anthropic.com/en/home
 - https://docs.pinecone.io/release-notes/2025
 - https://docs.pinecone.io/integrations/overview
+
+
+      {
+        "tab": "API docs",
+        "groups": [
+          {
+            "group": "API documentation",
+            "pages": ["api/introduction"]
+          },
+          {
+            "group": "Endpoint examples",
+            "pages": [
+              "api/endpoint/get",
+              "api/endpoint/create",
+              "api/endpoint/delete",
+              "api/endpoint/webhook"
+            ]
+          }
+        ]
+      }
