@@ -13,32 +13,32 @@
     "weights": [
       {
         "weight": 300,
-        "source": "/fonts/AirbnbCerealLight.ttf",
+        "source": "https://static.currentclient.com/v1/fonts/AirbnbCerealLight.ttf",
         "format": "truetype"
       },
       {
         "weight": 400,
-        "source": "/fonts/AirbnbCerealBook.ttf",
+        "source": "https://static.currentclient.com/v1/fonts/AirbnbCerealBook.ttf",
         "format": "truetype"
       },
       {
         "weight": 500,
-        "source": "/fonts/AirbnbCerealMedium.ttf",
+        "source": "https://static.currentclient.com/v1/fonts/AirbnbCerealMedium.ttf",
         "format": "truetype"
       },
       {
         "weight": 700,
-        "source": "/fonts/AirbnbCerealBold.ttf",
+        "source": "https://static.currentclient.com/v1/fonts/AirbnbCerealBold.ttf",
         "format": "truetype"
       },
       {
         "weight": 800,
-        "source": "/fonts/AirbnbCerealExtraBold.ttf",
+        "source": "https://static.currentclient.com/v1/fonts/AirbnbCerealExtraBold.ttf",
         "format": "truetype"
       },
       {
         "weight": 900,
-        "source": "/fonts/AirbnbCerealBlack.ttf",
+        "source": "https://static.currentclient.com/v1/fonts/AirbnbCerealBlack.ttf",
         "format": "truetype"
       }
     ]
