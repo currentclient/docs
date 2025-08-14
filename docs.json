@@ -44,9 +44,9 @@
               		{
                     "group": "Google Voice",
                     "icon": "/images/logos/google-voice.svg",
-                    "pages": ["guides/porting-number/google-voice/google-voice-personal", "guides/porting-number/google-voice/google-voice-business"]
+                    "pages": ["guides/porting/google-voice/personal", "guides/porting/google-voice/business"]
                   },
-                  "guides/porting-number/vonage"
+                  "guides/porting/vonage"
             ]
           },
           {
