@@ -24,7 +24,7 @@
       "source": "https://static.currentclient.com/v1/fonts/AirbnbCerealMedium.woff",
       "format": "woff"
     }
-  },  
+  },
   "navigation": {
     "tabs": [
       {
@@ -36,17 +36,27 @@
         "groups": [
           {
             "group": "Getting started",
-            "pages": ["guides/getting-started/index", "guides/getting-started/signup", "guides/getting-started/install-apps", "guides/getting-started/register-firm", "guides/getting-started/port-number", "guides/getting-started/whats-next"]
+            "pages": [
+              "guides/getting-started/index",
+              "guides/getting-started/signup",
+              "guides/getting-started/install-apps",
+              "guides/getting-started/register-firm",
+              "guides/getting-started/port-number",
+              "guides/getting-started/whats-next"
+            ]
           },
           {
             "group": "Porting number",
             "pages": [
-              		{
-                    "group": "Google Voice",
-                    "icon": "/images/logos/google-voice.svg",
-                    "pages": ["guides/porting/google-voice/personal", "guides/porting/google-voice/business"]
-                  },
-                  "guides/porting/vonage"
+              {
+                "group": "Google Voice",
+                "icon": "/images/logos/google-voice.svg",
+                "pages": [
+                  "guides/porting/google-voice/personal",
+                  "guides/porting/google-voice/business"
+                ]
+              },
+              "guides/porting/vonage"
             ]
           },
           {
@@ -55,15 +65,26 @@
               {
                 "group": "Wealthbox",
                 "icon": "https://static.currentclient.com/v1/logos/wealthbox-avatar.png",
-                "pages": ["guides/integrations/wealthbox/setup", "guides/integrations/wealthbox/data-sync", "guides/integrations/wealthbox/triggers"]
+                "pages": [
+                  "guides/integrations/wealthbox/setup",
+                  "guides/integrations/wealthbox/data-sync",
+                  "guides/integrations/wealthbox/triggers"
+                ]
               },
               "guides/integrations/slack",
               "guides/integrations/zapier"
             ]
           },
           {
+            "group": "FAQ",
+            "pages": ["/guides/faq/troubleshooting-2fa-voip"]
+          },
+          {
             "group": "Resources",
-            "pages": ["/guides/resources/support", "/guides/resources/write-review"]
+            "pages": [
+              "/guides/resources/support",
+              "/guides/resources/write-review"
+            ]
           }
         ]
       }

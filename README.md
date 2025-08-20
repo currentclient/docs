@@ -53,21 +53,23 @@ Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/sett
 - https://docs.pinecone.io/integrations/overview
 
 
-      {
-        "tab": "API docs",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": ["api/introduction"]
-          },
-          {
-            "group": "Endpoint examples",
+```json
+{
+  "tab": "API docs",
+  "groups": [
+    {
+      "group": "API documentation",
+      "pages": ["api/introduction"]
+    },
+    {
+      "group": "Endpoint examples",
             "pages": [
               "api/endpoint/get",
               "api/endpoint/create",
               "api/endpoint/delete",
               "api/endpoint/webhook"
             ]
-          }
-        ]
-      }
+        }
+  ]
+}
+```
