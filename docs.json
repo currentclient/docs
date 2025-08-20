@@ -74,10 +74,7 @@
               {
                 "group": "Quivr",
                 "icon": "https://static.currentclient.com/v1/logos/quivr-avatar.png",
-                "pages": [
-                  "guides/integrations/quivr/setup",
-                  "guides/integrations/quivr/data-sync"
-                ]
+                "pages": ["guides/integrations/quivr/setup"]
               },
               "guides/integrations/slack",
               "guides/integrations/zapier"
