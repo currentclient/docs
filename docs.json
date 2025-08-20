@@ -71,6 +71,14 @@
                   "guides/integrations/wealthbox/triggers"
                 ]
               },
+              {
+                "group": "Quivr",
+                "icon": "https://static.currentclient.com/v1/logos/quivr-avatar.png",
+                "pages": [
+                  "guides/integrations/quivr/setup",
+                  "guides/integrations/quivr/data-sync"
+                ]
+              },
               "guides/integrations/slack",
               "guides/integrations/zapier"
             ]

@@ -1,0 +1,284 @@
+---
+title: "Data Sync"
+description: "Understanding how data flows between CurrentClient and Quivr"
+---
+
+# How Data Syncs with Quivr
+
+Understanding what data flows between CurrentClient and Quivr helps you make the most of the integration.
+
+<Tip>**Sync frequency:** Daily summaries are generated each morning, or in real-time if configured.</Tip>
+
+## Data Flow Overview
+
+CurrentClient seamlessly integrates with Quivr to provide comprehensive communication tracking and client management.
+
+## What Syncs from Quivr to CurrentClient?
+
+<CardGroup cols={2}>
+  <Card title="Contact Information" icon="id-badge">
+    Names, phone numbers, email addresses, and physical addresses
+  </Card>
+  <Card title="Client Records" icon="users">
+    Complete client profiles and relationship data
+  </Card>
+  <Card title="Activity History" icon="clock-rotate-left">
+    Historical client interactions and notes
+  </Card>
+  <Card title="Custom Fields" icon="gears">
+    Any custom fields configured in your Quivr instance
+  </Card>
+</CardGroup>
+
+## What Syncs from CurrentClient to Quivr?
+
+<CardGroup cols={2}>
+  <Card title="Text Conversations" icon="comments">
+    Complete message threads with timestamps and context
+  </Card>
+  <Card title="Call Records" icon="phone">
+    Detailed call logs including duration, notes, and recordings (if enabled)
+  </Card>
+  <Card title="Daily Summaries" icon="file-lines">
+    Automated conversation summaries added to activity records
+  </Card>
+  <Card title="Real-time Updates" icon="bolt">
+    Instant sync of calls and messages when real-time mode is enabled
+  </Card>
+</CardGroup>
+
+## Sync Configuration Options
+
+### Daily Conversation Summary
+
+When enabled, CurrentClient automatically creates a comprehensive summary of all client interactions from the previous day and adds them to Quivr activity records each morning.
+
+**What's included:**
+- Text message conversations with full context
+- Phone call details (duration, time, participants)
+- Key topics discussed
+- Action items identified
+
+**Customization options:**
+- Include both calls and texts (default)
+- Text-only mode (exclude phone calls)
+- Custom summary formatting
+
+### Real-time Sync
+
+For immediate data availability, enable real-time sync to push communications to Quivr as they happen.
+
+**Benefits:**
+- Instant visibility in Quivr dashboards
+- No delay in compliance tracking
+- Real-time team collaboration
+- Immediate reporting capabilities
+
+## Detailed Field Mapping
+
+Here's exactly what data syncs between CurrentClient and Quivr:
+
+<AccordionGroup>
+  <Accordion title="Core contact fields">
+    
+    **Basic Information:**
+    <ParamField body="FirstName" type="string">
+      Synced from Quivr `first_name` field
+    </ParamField>
+    
+    <ParamField body="LastName" type="string">
+      Synced from Quivr `last_name` field
+    </ParamField>
+    
+    <ParamField body="Nickname" type="string">
+      Synced from Quivr `nickname` field
+    </ParamField>
+    
+    <ParamField body="BirthDate" type="date">
+      Synced from Quivr `birth_date` field
+    </ParamField>
+    
+    <ParamField body="AvatarUrl" type="string">
+      Synced from Quivr `image` field (if not default person.png)
+    </ParamField>
+
+    **Contact Information:**
+    <ParamField body="Phone" type="string">
+      Primary phone number from Quivr contact
+    </ParamField>
+
+    <ParamField body="Email" type="string">
+      Primary email address from Quivr contact
+    </ParamField>
+
+    **Address Information:**
+    <ParamField body="Address1" type="string">
+      Primary address `street_line_1` from Quivr
+    </ParamField>
+
+    <ParamField body="Address2" type="string">
+      Primary address `street_line_2` from Quivr
+    </ParamField>
+
+    <ParamField body="City" type="string">
+      Primary address `city` from Quivr
+    </ParamField>
+
+    <ParamField body="State" type="string">
+      Primary address `state` from Quivr
+    </ParamField>
+
+    <ParamField body="Zip" type="string">
+      Primary address `zip_code` from Quivr
+    </ParamField>
+
+  </Accordion>
+
+{" "}
+
+<Accordion title="System tracking fields">
+  These fields help maintain the connection between systems:
+  <ParamField body="SourceId" type="string">
+    The unique Quivr contact ID for maintaining sync relationships
+  </ParamField>
+  <ParamField body="SourceType" type="string">
+    Always set to "QUIVR" to identify the data source
+  </ParamField>
+  <ParamField body="SourceSyncFlow" type="string">
+    Unique identifier for the sync flow configuration
+  </ParamField>
+  <ParamField body="SourceMeta" type="object">
+    Contains reference IDs for maintaining data relationships: - `SourceEmailId`
+    - Primary email reference ID - `SourcePhoneId` - Primary phone reference ID
+    - `SourceAddressId` - Primary address reference ID - `SourceVisibleToId` -
+    Visibility permissions reference
+  </ParamField>
+</Accordion>
+
+{" "}
+
+<Accordion title="Household information">
+  If the contact belongs to a household in Quivr, these fields sync to
+  maintain family and business relationships:
+  <ParamField body="HouseholdId" type="string">
+    Unique household identifier from Quivr `id`
+  </ParamField>
+  <ParamField body="HouseholdName" type="string">
+    Household display name from Quivr `name`
+  </ParamField>
+  <ParamField body="HouseholdTitle" type="string">
+    Household title or description from Quivr `title`
+  </ParamField>
+</Accordion>
+
+{" "}
+
+<Accordion title="Phone numbers">
+  Every phone number from Quivr gets transferred as an array of phone
+  objects:
+  <ParamField body="Numbers" type="array">
+    Array of phone number objects, each containing:
+  </ParamField>
+  <ParamField body="Phone" type="string">
+    Cleaned and formatted phone number
+  </ParamField>
+  <ParamField body="Label" type="string">
+    Phone type classification (Mobile, Work, Home, etc.)
+  </ParamField>
+  <ParamField body="IsPreferred" type="boolean">
+    Whether this is the primary contact number for the client
+  </ParamField>
+  <ParamField body="Meta" type="object">
+    Source metadata including Quivr phone ID and type classification
+  </ParamField>
+</Accordion>
+
+{" "}
+
+<Accordion title="Tags">
+  CurrentClient automatically reads the tags from your Quivr contact and
+  creates a matching tag on the CurrentClient contact.
+</Accordion>
+
+  <Accordion title="Classification and Visibility">
+    CurrentClient automatically creates the following tags from your Quivr contact to help identify the most common fields that are used for classification and visibility.
+
+    **Contact Classification Tags:**
+    <ParamField body="Contact Type" type="tag">
+      Automatically created from Quivr contact type field
+    </ParamField>
+
+    <ParamField body="Record Type" type="tag">
+      Generated from Quivr record type classification
+    </ParamField>
+
+    <ParamField body="Household Title" type="tag">
+      Generated from Quivr household title field
+    </ParamField>
+
+    <ParamField body="Contact Status" type="tag">
+      Synced from Quivr contact status field
+    </ParamField>
+
+    <ParamField body="Contact Source" type="tag">
+      Created from Quivr source tracking information
+    </ParamField>
+
+    <ParamField body="Gender" type="tag">
+      Generated from Quivr gender field (if populated)
+    </ParamField>
+
+    **Assignment & Visibility Tags:**
+    <ParamField body="Assigned To" type="tag">
+      Mapped from Quivr user assignments to team member names
+    </ParamField>
+
+    <ParamField body="Visible To" type="tag">
+      Created from Quivr visibility permissions and user groups
+    </ParamField>
+
+    <ParamField body="Quivr Tags" type="tag">
+      All existing tags from Quivr are preserved and synced
+    </ParamField>
+
+    <ParamField body="Household Tags" type="tag">
+      Generated for contacts that belong to households (if applicable)
+    </ParamField>
+
+  </Accordion>
+
+  <Accordion title="Custom fields (optional)">
+    
+    If you select to sync custom fields, all custom fields will be synced to CurrentClient as well.
+    
+    <Tip>
+    **Custom field setup:** Contact support to configure custom field mappings that fit your specific Quivr setup and business needs.
+    </Tip>
+  </Accordion>
+</AccordionGroup>
+
+## Conversation Notes Sync
+
+Your CurrentClient conversations automatically become organized notes in Quivr, providing a comprehensive communication history for each client.
+
+<Note>
+  **Conversation summaries:** CurrentClient automatically creates detailed conversation summaries that are added as activity records to your Quivr client profiles, ensuring complete documentation of all client interactions.
+</Note>
+
+## Best Practices
+
+- **Review sync settings regularly** to ensure they match your workflow
+- **Use tags consistently** between both systems for better organization
+- **Enable real-time sync** for time-sensitive client communications
+- **Monitor daily summaries** to ensure accurate activity tracking
+
+## Troubleshooting Sync Issues
+
+If data isn't syncing as expected:
+
+1. Verify your Quivr connection is active in Settings
+2. Check that sync options are properly configured
+3. Ensure you have proper permissions in both systems
+4. Contact support if issues persist
+
+Need help? Reach out to support@currentclient.com
