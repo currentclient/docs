@@ -73,6 +73,7 @@
                 "group": "Calling",
                 "icon": "phone",
                 "pages": [
+                  "guides/concepts/calling/call-flow",
                   "guides/concepts/calling/call-forwarding",
                   "guides/concepts/calling/call-recording"
                 ]
@@ -106,7 +107,8 @@
             "group": "FAQ",
             "pages": [
               "/guides/faq/troubleshooting-2fa-voip",
-              "/guides/faq/what-is-my-status"
+              "/guides/faq/what-is-my-status",
+              "/guides/faq/my-app-is-not-ringing"
             ]
           },
           {
