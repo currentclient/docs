@@ -1,0 +1,171 @@
+---
+title: "Linking Conversations"
+description: "Connect conversations to CRM contacts for automatic syncing"
+---
+
+## How does conversation linking work?
+
+CurrentClient can automatically sync your conversation history to your CRM, keeping everything organized in one place.
+
+When someone calls or texts you, we automatically check for a matching contact record and connect the conversation. If we don't find a match, that's okay! You can still communicate normally. We just won't sync to the CRM until you link a contact.
+
+## How can I attach a conversation to a client?
+
+<Tabs>
+  <Tab title="Desktop" icon="desktop">
+
+When you are on the desktop you can easily update the contact associated with a conversation. Lets check it out.
+
+Go click into any conversation in your inbox.
+
+#### If a contact _is_ attached
+
+If this conversation is attached to a client it will look like this
+
+<Frame>
+  <img
+    src="/images/explainers/web-conversation-detail-1v1.png"
+    alt=""
+    className="rounded-xl"
+  />
+</Frame>
+
+You can see that the contact overview is listed on the right side of the screen.
+
+If this connection is wrong or needs to be updated, you can unlink the contact from the conversation by clicking the "Unlink" button.
+
+Now the conversation is not attached to any client, and we can attach a new one.
+
+#### If a contact _is not_ attached
+
+If this conversation is not attached to a client it will look like this
+
+<Frame>
+  <img
+    src="/images/explainers/web-conversation-detail-unattached.png"
+    alt=""
+    className="rounded-xl"
+  />
+</Frame>
+
+(1) Shows the number you are messaging
+
+(2) Shows contacts in your account already that have a matching phone number
+
+(3) Gives you an option to create a new contact
+
+From here, you can choose to attach to an existing contact or create a new one. That will link the conversation to the client and from this point on, any messages in this conversation will be synced to your CRM.
+
+  </Tab>
+  
+  <Tab title="Mobile" icon="mobile">
+
+When you are on the mobile you can easily update the contact associated with a conversation. Lets check it out.
+
+Go click into any conversation in your inbox.
+
+#### If a contact _is_ attached
+
+When this conversation is attached to a client it will look like this.
+
+<Columns cols={2}>
+
+<Frame>
+  <img
+    src="/images/explainers/mobile-conversation-detail.png"
+    alt=""
+    className="rounded-xl"
+  />
+</Frame>
+
+</Columns>
+
+You can click on the contact name at the top to see additional actions.
+
+<Columns cols={2}>
+
+<Frame>
+  <img
+    src="/images/explainers/mobile-conversation-detail-actions.png"
+    alt=""
+    className="rounded-xl"
+  />
+</Frame>
+</Columns>
+
+Click on the "View" button to see the full contact details.
+
+<Columns cols={2}>
+
+<Frame>
+  <img
+    src="/images/explainers/mobile-conversation-detail-participants.png"
+    alt=""
+    className="rounded-xl"
+  />
+</Frame>
+</Columns>
+
+If this connection is wrong or needs to be updated, you can unlink the contact from the conversation by clicking the "Unlink" button.
+
+Now the conversation is not attached to any client, and we can attach a new one.
+
+#### If a contact _is not_ attached
+
+When this conversation is not attached to a client it will look like this
+
+<Columns cols={2}>
+
+<Frame>
+  <img
+    src="/images/explainers/mobile-conversation-detail-unknown.png"
+    alt=""
+    className="rounded-xl"
+  />
+</Frame>
+
+</Columns>
+
+Go ahead and click on the "Add as a contact" button. And that will take you to a spot where you can now attach an existing contact record to this conversation.
+
+If you don't have this contact created in your account, you can choose to create a new contact.
+
+<Columns cols={2}>
+
+<Frame>
+  <img
+    src="/images/explainers/mobile-conversation-detail-link-options.png"
+    alt=""
+    className="rounded-xl"
+  />
+</Frame>
+
+</Columns>
+
+  </Tab>
+
+</Tabs>
+
+## FAQ
+
+<AccordionGroup>
+  <Accordion title="Do you retroactively connect conversations to clients?">
+    Not currently. We don't look back in time to connect past conversations to
+    newly added clients. This is a popular feature request that we're
+    considering for the future!
+  </Accordion>
+
+<Accordion title="Do I have to sync conversations to my CRM?">
+  No, syncing is optional! You can turn off CRM conversation sync in your CRM
+  sync settings if you prefer to keep conversations only in CurrentClient.
+</Accordion>
+
+<Accordion title="What happens if I link the wrong contact?">
+  No problem! Simply unlink the incorrect contact and then link the correct one.
+  Future messages will sync to the newly linked contact.
+</Accordion>
+
+  <Accordion title="Can I link one conversation to multiple contacts?">
+    Yes! If you have a group message you can link multiple clients with to the message based on their phone number.
+  </Accordion>
+</AccordionGroup>
