@@ -35,7 +35,7 @@
         "tab": "Guides",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Setup",
             "pages": [
               "guides/getting-started/index",
               "guides/getting-started/signup",
@@ -62,24 +62,35 @@
             ]
           },
           {
-            "group": "Integrations",
+            "group": "Learn",
             "pages": [
               {
-                "group": "Wealthbox",
-                "icon": "https://static.currentclient.com/v1/logos/wealthbox-avatar.png",
-                "pages": [
-                  "guides/integrations/wealthbox/setup",
-                  "guides/integrations/wealthbox/data-sync",
-                  "guides/integrations/wealthbox/triggers"
-                ]
+                "group": "Calling",
+                "icon": "phone",
+                "pages": ["guides/concepts/calling/call-forwarding"]
               },
               {
-                "group": "Quivr",
-                "icon": "https://static.currentclient.com/v1/logos/quivr-avatar.png",
-                "pages": ["guides/integrations/quivr/setup"]
-              },
-              "guides/integrations/slack",
-              "guides/integrations/zapier"
+                "group": "Integrations",
+                "icon": "plug",
+                "pages": [
+                  {
+                    "group": "Wealthbox",
+                    "icon": "https://static.currentclient.com/v1/logos/wealthbox-avatar.png",
+                    "pages": [
+                      "guides/integrations/wealthbox/setup",
+                      "guides/integrations/wealthbox/data-sync",
+                      "guides/integrations/wealthbox/triggers"
+                    ]
+                  },
+                  {
+                    "group": "Quivr",
+                    "icon": "https://static.currentclient.com/v1/logos/quivr-avatar.png",
+                    "pages": ["guides/integrations/quivr/setup"]
+                  },
+                  "guides/integrations/slack",
+                  "guides/integrations/zapier"
+                ]
+              }
             ]
           },
           {
