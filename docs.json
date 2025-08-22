@@ -67,9 +67,7 @@
               {
                 "group": "Inbox",
                 "icon": "inbox",
-                "pages": [
-                  "guides/concepts/inbox/linking-conversations"
-                ]
+                "pages": ["guides/concepts/inbox/linking-conversations"]
               },
               {
                 "group": "Calling",
@@ -106,7 +104,10 @@
           },
           {
             "group": "FAQ",
-            "pages": ["/guides/faq/troubleshooting-2fa-voip"]
+            "pages": [
+              "/guides/faq/troubleshooting-2fa-voip",
+              "/guides/faq/what-is-my-status"
+            ]
           },
           {
             "group": "Resources",
