@@ -41,22 +41,24 @@
               "guides/getting-started/signup",
               "guides/getting-started/install-apps",
               "guides/getting-started/register-firm",
-              "guides/getting-started/port-number",
-              "guides/getting-started/whats-next"
-            ]
-          },
-          {
-            "group": "Porting number",
-            "pages": [
               {
-                "group": "Google Voice",
-                "icon": "/images/logos/google-voice.svg",
+                "group": "Port a number",
+                "icon": "arrow-right-arrow-left",
                 "pages": [
-                  "guides/porting/google-voice/personal",
-                  "guides/porting/google-voice/business"
+                  "guides/porting/overview",
+                  {
+                    "group": "Google Voice",
+                    "icon": "/images/logos/google-voice.svg",
+                    "pages": [
+                      "guides/porting/google-voice/personal",
+                      "guides/porting/google-voice/business"
+                    ]
+                  },
+                  "guides/porting/vonage",
+                  "guides/porting/sms-hosting"
                 ]
               },
-              "guides/porting/vonage"
+              "guides/getting-started/whats-next"
             ]
           },
           {
