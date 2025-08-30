@@ -16,15 +16,19 @@ import { iconActionColor } from "/snippets/colors.mdx";
 <div className="flex flex-col lg:flex-row  justify-between pb-12 px-4">
   <div className="lg:w-1/2 lg:pr-12 mb-8 lg:mb-0">
     <div className="flex flex-col mb-6 space-y-6">
-      <h1 className="text-2xl text-gray-900 dark:text-white font-medium">
-        Hello! This is the place to dive into all things <b>CurrentClient</b> so you can get up and running.
+      <div className="flex flex-col space-y-2">
+      <h1 className="text-3xl text-gray-900 dark:text-white font-bold">
+        CurrentClient help center.
       </h1>
-          
+      <h3 className="text-lg text-gray-500 dark:text-white font-medium">
+        Learn how to get up and running with the CurrentClient app. 
+      </h3>
+      </div>
       
       <div className="flex flex-col bg-gray-50 dark:bg-gray-950 rounded-lg px-6 py-4 space-y-4">
 
     <p className="text-md text-gray-600 dark:text-gray-300">
-      "We are super excited to have you here! We know how it is learning new tech. Feels a bit overwhelming and can be hard to know where to start. You are in the right place to learn how to get up and running so you can get the most from the app."
+      "Hey! We are super excited to have you here! We are adding new guides all the time, so if you need something, please just let us know."
     </p>
 
 <div className="flex flex-row items-center space-x-4">
@@ -46,7 +50,7 @@ import { iconActionColor } from "/snippets/colors.mdx";
     </div>
     </div>
 
-    <div className="flex flex-row items-center space-x-4">
+    <div className="flex gap-4 md:flex-row flex-col">
 
       <Button
         label="Get Started"
@@ -90,7 +94,7 @@ import { iconActionColor } from "/snippets/colors.mdx";
     <h2 className="text-2xl text-gray-900 dark:text-white font-normal mb-6">Popular guides</h2>
     <Columns cols={3}>
 
-      <Card title="Port number" icon="phone-volume" href="/guides/getting-started/port-number" arrow="true"
+      <Card title="Port number" icon="phone-volume" href="/guides/porting/overview" arrow="true"
       color={iconActionColor}
       >
         Transfer your existing phone number to CurrentClient

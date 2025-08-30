@@ -98,7 +98,8 @@
                   },
                   "guides/integrations/google-drive",
                   "guides/integrations/slack",
-                  "guides/integrations/zapier"
+                  "guides/integrations/zapier",
+                  "guides/integrations/make"
                 ]
               }
             ]
@@ -117,6 +118,20 @@
               "/guides/resources/support",
               "/guides/resources/write-review"
             ]
+          }
+        ]
+      },
+      {
+        "tab": "API reference",
+        "groups": [
+          {
+            "group": "API",
+            "pages": ["api/introduction"]
+          },
+          {
+            "group": "Make API",
+            "openapi": "https://users.api.currentclient.io/openapi.json",
+            "pages": ["POST /api/v1/public/webhooks/make/send-message"]
           }
         ]
       }
