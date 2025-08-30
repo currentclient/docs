@@ -130,7 +130,7 @@
           },
           {
             "group": "Make API",
-            "openapi": "https://users.api.currentclient.io/openapi.json",
+            "openapi": "https://users.api.currentclient.com/openapi.json",
             "pages": ["POST /api/v1/public/webhooks/make/send-message"]
           }
         ]
