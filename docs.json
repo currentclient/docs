@@ -122,11 +122,11 @@
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "API",
         "groups": [
           {
             "group": "API",
-            "pages": ["api/introduction"]
+            "pages": ["api-reference/introduction"]
           },
           {
             "group": "Make API",
