@@ -79,6 +79,11 @@
                 ]
               },
               {
+                "group": "Outreach",
+                "icon": "seedling",
+                "pages": ["guides/concepts/outreach/broadcast-simple"]
+              },
+              {
                 "group": "Integrations",
                 "icon": "plug",
                 "pages": [
