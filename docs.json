@@ -55,6 +55,7 @@
                     ]
                   },
                   "guides/porting/vonage",
+                  "guides/porting/myrepchat",
                   "guides/porting/sms-hosting"
                 ]
               },
