@@ -68,7 +68,11 @@
               {
                 "group": "Inbox",
                 "icon": "inbox",
-                "pages": ["guides/concepts/inbox/linking-conversations"]
+                "pages": [
+                  "guides/concepts/inbox/overview",
+                  "guides/concepts/inbox/send-group-message",
+                  "guides/concepts/inbox/linking-conversations"
+                ]
               },
               {
                 "group": "Calling",
