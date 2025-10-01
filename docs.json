@@ -71,7 +71,8 @@
                 "pages": [
                   "guides/concepts/inbox/overview",
                   "guides/concepts/inbox/send-group-message",
-                  "guides/concepts/inbox/linking-conversations"
+                  "guides/concepts/inbox/linking-conversations",
+                  "guides/concepts/inbox/unsubscribe"
                 ]
               },
               {
