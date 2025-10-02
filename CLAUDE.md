@@ -36,6 +36,7 @@
 - Language tags on all code blocks
 - Alt text on all images
 - Relative paths for internal links
+- NEVER use `{" "}` JSX space syntax in MDX files - use regular spaces instead
 
 ## Tone and voice guidelines
 
