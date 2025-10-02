@@ -79,7 +79,7 @@
                 "group": "Calling",
                 "icon": "phone",
                 "pages": [
-                  "guides/concepts/calling/call-flows",
+                  "guides/concepts/calling/call-flow",
                   "guides/concepts/calling/call-forwarding",
                   "guides/concepts/calling/call-recording"
                 ]
