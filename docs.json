@@ -69,10 +69,10 @@
                 "group": "Inbox",
                 "icon": "inbox",
                 "pages": [
-                  "guides/concepts/inbox/overview",
-                  "guides/concepts/inbox/send-group-message",
-                  "guides/concepts/inbox/linking-conversations",
-                  "guides/concepts/inbox/unsubscribe"
+                  "guides/inbox/overview",
+                  "guides/inbox/send-group-message",
+                  "guides/inbox/linking-conversations",
+                  "guides/inbox/unsubscribe"
                 ]
               },
               {
