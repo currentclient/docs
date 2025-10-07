@@ -90,6 +90,15 @@
                 "pages": ["guides/concepts/outreach/broadcast-simple"]
               },
               {
+                "group": "Adminstration",
+                "icon": "sitemap",
+                "pages": [
+                  "guides/admin/account-structure",
+                  "guides/admin/workspace",
+                  "guides/admin/how-do-i-add-a-workspace"
+                ]
+              },
+              {
                 "group": "Integrations",
                 "icon": "plug",
                 "pages": [
@@ -120,8 +129,7 @@
             "pages": [
               "/guides/faq/troubleshooting-2fa-voip",
               "/guides/faq/what-is-my-status",
-              "/guides/faq/my-app-is-not-ringing",
-              "/guides/faq/how-do-i-add-a-workspace"
+              "/guides/faq/my-app-is-not-ringing"
             ]
           },
           {
