@@ -5,21 +5,87 @@ description: "Learn how organizations and workspaces are structured in CurrentCl
 
 When setting up CurrentClient, it's helpful to understand how your account is structured. Let's walk through how it all fits together.
 
-## Account Setup
+## What is an account?
 
-When you sign up with CurrentClient, an **organization** is created for you along with a default **workspace**. You can add additional workspaces if you need them, but it's important to understand what a workspace is first.
+When you sign up with CurrentClient, an **organization** (also called your account) is created for you. This is your top-level container that can hold everything - workspaces, billing, and settings. Think of it as your firm's account with us.
 
-An organization is a grouping of:
+## What is a workspace?
 
-- Workspaces
+A workspace is an environment within your account where your team collaborates. Each workspace contains:
 
-A workspace is a grouping of:
+- **Phone numbers (inboxes)** - One or more phone numbers for calling and texting
+- **Team members** - People who need to access those phone numbers
+- **Contact list** - Typically synced from your CRM
 
-- Phone numbers (inboxes)
-- Team members
-- Contact list (CRM sync)
+When you first sign up, you get a default workspace to get started. Likely, if you are solo or a small team, you never need to leave your workspace! You can manage everything you need from your workspace.
 
-## How should I setup my account?
+## What is an inbox?
+
+An inbox is simply a phone number in your workspace. Each phone number has its own inbox where you see all the text conversations and call history for that number. If you have multiple phone numbers in your workspace, you'll have multiple inboxes to switch between.
+
+### Inbox permission levels
+
+You can customize access for each team member to each inbox in your workspace. There are two levels:
+
+- **View only access** - Can see and monitor conversations, but can't respond. Great for supervisors or compliance officers.
+- **Full access** - Can both read messages and respond. This is what most active team members need.
+
+## Scenario A: Single workspace with small team
+
+**Sage Financial** has 1 advisor and 1 support staff with 2 phone numbers:
+
+- Main office line: (555) 100-0001
+- Advisor direct line: (555) 100-0002
+
+**Setup:**
+- Both are team members in one workspace
+- Full CRM contact list synced (500+ clients)
+- Custom inbox access:
+  - Everyone has full access to the main office line
+  - Advisor has full access to direct line, staff has view-only access
+
+**What this means:**
+- Everyone sees the same contact list and can message any client
+- Support staff can handle all calls and texts from the main office line
+- Support staff can monitor the advisor's direct line and provide backup
+
+## Scenario B: Single workspace with larger team
+
+**Gypsy Financial** has 10 advisors and 7 support staff with multiple phone numbers:
+
+- Main office line: (555) 100-0001
+- Direct line for each advisor: (555) 100-[x]
+
+**Setup:**
+- All 17 team members in one workspace
+- Full CRM contact list synced (500+ clients)
+- Custom inbox access:
+  - Everyone has access to the main office line
+  - Each advisor has access only to their own direct line
+  - Advisors can grant support staff access to their inbox as needed
+
+**What this means:**
+- Everyone sees the same contact list and can message any client
+- Advisors only see conversations from inboxes they have access to
+- Easy call transfers and flexible phone menu options since all team members are in one workspace
+
+## Scenario C: Multiple workspaces
+
+**Denali Wealth Advisors** has a network of 45 offices across the country.
+
+**Setup:**
+- 45 separate workspaces (one for each office)
+- Each office manages their own phone numbers and team members
+- Each office syncs their own subset of contacts from the CRM
+
+**What this means:**
+- Complete separation between offices - each team only sees their own contacts and conversations
+- Each workspace can have different settings, integrations, and workflows
+- Centralized billing managed at the organization level
+- Compliance officer can oversee all 45 workspaces from the organization level
+- Each office sets up their workspace as needed, typically following something like Scenario A or B
+
+## Which should I do?
 
 This is going to depend largely on your firm size and the boundaries around which team members work together.
 
@@ -35,6 +101,6 @@ Here's a quick video that dives into this idea:
   />
 </Frame>
 
-## Our Recommendation
+## Our recommendation
 
 When in doubt, start with a single workspace. It gives you the most flexibility and is easier to manage - you can always add more workspaces later as your needs evolve!
