@@ -94,7 +94,10 @@
               {
                 "group": "Contacts",
                 "icon": "users",
-                "pages": ["guides/contacts/manage", "guides/contacts/segments"]
+                "pages": [
+                  "guides/contacts/overview",
+                  "guides/contacts/segments"
+                ]
               },
               {
                 "group": "Adminstration",
