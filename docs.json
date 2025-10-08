@@ -92,6 +92,11 @@
                 "pages": ["guides/concepts/outreach/broadcast-simple"]
               },
               {
+                "group": "Contacts",
+                "icon": "users",
+                "pages": ["guides/contacts/manage", "guides/contacts/segments"]
+              },
+              {
                 "group": "Adminstration",
                 "icon": "sitemap",
                 "pages": [
