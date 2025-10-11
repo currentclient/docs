@@ -1,0 +1,116 @@
+---
+title: "Phone numbers"
+description: "Understanding how phone number settings work and what you need to configure for each line"
+---
+
+## Understanding phone number independence
+
+Here's something important to know: **each phone number in CurrentClient is like its own independent unit**. This means that settings you configure for one phone number don't automatically apply to your other numbers.
+
+Think of each phone number as having its own complete setup - its own timezone, business hours, call recording preferences, and dial plan. This gives you flexibility to configure different lines for different purposes, but it also means you'll need to set up each number individually.
+
+## Settings to configure per phone number
+
+When you add a new phone number or want to make changes, here are the key settings you'll need to configure for each line:
+
+### Timezone
+
+Each phone number needs its own timezone setting. This ensures that business hours, scheduled messages, and time-based features work correctly for that line.
+
+<Tip>
+  If you have multiple phone numbers for different locations, make sure each one
+  has the correct timezone for its area.
+</Tip>
+
+### Business hours
+
+Business hours are configured per phone number. When you enable business hours on a line, it controls after-hours voicemail greetings and can trigger auto-replies for that specific number.
+
+You'll need to enable business hours on each line where you want after-hours handling to work.
+
+### Call recording
+
+Whether calls are automatically recorded is a per-number setting. You can have auto-recording enabled for your main business line but turned off for a personal line, for example.
+
+<Info>
+  Remember to configure this for every line where you want calls recorded
+  automatically. Learn more in our [call recording
+  guide](/guides/concepts/calling/call-recording).
+</Info>
+
+### Dial plan
+
+Each phone number has its own dial plan that controls how incoming calls are routed. You can have different greetings, ring patterns, and voicemail setups for different lines.
+
+Check out our [call flow guide](/guides/concepts/calling/call-flow) for details on building dial plans.
+
+### Auto-replies
+
+Text auto-reply settings are configured per phone number. You can set up different auto-reply messages for different lines based on your needs.
+
+See our [auto-replies guide](/guides/inbox/auto-replies) for when and how to use auto-replies effectively.
+
+## Quick setup checklist for new phone numbers
+
+When you add a new phone number to your workspace, here's a handy checklist to make sure everything is configured:
+
+<Steps>
+  <Step title="Set the timezone">
+    Configure the correct timezone for this phone number's location
+  </Step>
+
+<Step title="Enable business hours (if needed)">
+  Turn on business hours if you want after-hours handling for this line
+</Step>
+
+<Step title="Configure call recording">
+  Decide if you want auto-recording enabled for this number
+</Step>
+
+<Step title="Build your dial plan">
+  Set up how calls should be routed, including greetings and voicemail
+</Step>
+
+<Step title="Set up auto-replies (optional)">
+  Configure text auto-replies if you want automated responses
+</Step>
+
+  <Step title="Test it out">
+    Make a test call and send a test text to verify everything works as expected
+  </Step>
+</Steps>
+
+## Why this matters
+
+This per-number configuration gives you a lot of flexibility. You might have:
+
+- A main business line with strict business hours and auto-recording
+- Personal direct lines with different settings
+- Department-specific numbers with unique greetings and routing
+- Location-based numbers with appropriate timezones and local business hours
+
+Understanding that each inbox works independently helps you set up your workspace exactly the way you need it.
+
+## Frequently asked questions
+
+<AccordionGroup>
+  <Accordion title="Do I really need to configure every setting on every phone number?">
+    You need to configure the settings that matter for each line. For example, if you don't need business hours on a particular number, you don't have to enable it. But for settings like timezone and dial plan, yes - you'll want to set those up for each number you're actively using.
+  </Accordion>
+
+<Accordion title="Can I copy settings from one phone number to another?">
+  Not currently, but this is a feature we're considering. For now, you'll need
+  to configure each number individually. The good news is that once it's set up,
+  you don't have to think about it again unless you want to make changes.
+</Accordion>
+
+<Accordion title="What happens if I don't set the timezone?">
+  The system will use a default timezone, but this might cause issues with
+  business hours and scheduled features. We strongly recommend setting the
+  correct timezone for each phone number to ensure everything works as expected.
+</Accordion>
+
+  <Accordion title="I changed a setting on one line - do I need to change it on all of them?">
+    Only if you want that setting to apply to all your lines. Remember, each phone number is independent. If you enable auto-recording on your main line, your other lines won't automatically start recording unless you enable it for them too.
+  </Accordion>
+</AccordionGroup>
