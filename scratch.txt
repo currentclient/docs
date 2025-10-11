@@ -1,0 +1,58 @@
+
+<div className="px-4 pt-8 pb-16 space-y-12 rounded-lg">
+  <div>
+    <h2 className="text-2xl text-gray-900 dark:text-white font-normal mb-6">Getting started</h2>
+    <Columns cols={3}>
+      <Card title="Signup" icon="user-plus" href="/guides/getting-started/signup" arrow="true" 
+      color={iconActionColor}
+      >
+        Create your CurrentClient account and get started
+      </Card>
+      <Card title="Install apps" icon="download" href="/guides/getting-started/install-apps" arrow="true" color={iconActionColor}>
+        Download and install the CurrentClient desktop and mobile app
+      </Card>
+      <Card title="Register firm" icon="building"  href="/guides/getting-started/register-firm" arrow="true" color={iconActionColor}>
+        Get registered with the phone carriers
+      </Card>
+    </Columns>
+  </div>
+
+  <div>
+    <h2 className="text-2xl text-gray-900 dark:text-white font-normal mb-6">Popular guides</h2>
+    <Columns cols={3}>
+
+      <Card title="Port number" icon="phone-volume" href="/guides/porting/overview" arrow="true"
+      color={iconActionColor}
+      >
+        Transfer your existing phone number to CurrentClient
+      </Card>
+      <Card title="Connect Wealthbox" icon="https://static.currentclient.com/v1/logos/wealthbox-avatar.png" href="/guides/integrations/wealthbox/setup" arrow="true"
+      color={iconActionColor}
+      >
+        Connect your Wealthbox CRM to CurrentClient
+      </Card>
+      {/* <Card title="Setup automations" icon="bolt" href="/components/columns" arrow="true" color={iconActionColor}>
+        Configure birthdays, anniversaries and other client touchpoints
+      </Card>
+      <Card title="Build phone menu" icon="route" href="/components/columns" arrow="true" color={iconActionColor}>
+        Setup your phone menu to route calls to the right place
+      </Card>       */}
+    </Columns>
+
+  </div>
+
+  <div>
+    <h2 className="text-2xl text-gray-900 dark:text-white font-normal mb-6">Getting help</h2>
+    <Columns cols={3}>
+      <Card title="Call us" icon="phone" href="/guides/resources/support" arrow="true" color={iconActionColor}>
+        Speak directly with our support team
+      </Card>
+      <Card title="Email us" icon="envelope" href="/guides/resources/support" arrow="true" color={iconActionColor}>
+        Send us an email for detailed assistance
+      </Card>
+      <Card title="Text us" icon="comments" href="/guides/resources/support" arrow="true" color={iconActionColor}>
+        Get quick help via text message
+      </Card>
+    </Columns>
+  </div>
+</div>
