@@ -71,9 +71,11 @@
                 "icon": "inbox",
                 "pages": [
                   "guides/inbox/overview",
+                  "guides/inbox/settings",
                   "guides/inbox/send-group-message",
                   "guides/inbox/linking-conversations",
                   "guides/inbox/unsubscribe",
+                  "guides/inbox/tcpa-compliance",
                   "guides/inbox/inbox-switching",
                   "guides/inbox/auto-replies"
                 ]
@@ -84,8 +86,7 @@
                 "pages": [
                   "guides/concepts/calling/call-flow",
                   "guides/concepts/calling/call-forwarding",
-                  "guides/concepts/calling/call-recording",
-                  "guides/concepts/calling/phone-settings"
+                  "guides/concepts/calling/call-recording"
                 ]
               },
               {
