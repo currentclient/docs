@@ -42,7 +42,7 @@
               "guides/getting-started/install-apps",
               "guides/getting-started/register-firm",
               {
-                "group": "Port a number",
+                "group": "Port in number",
                 "icon": "arrow-right-arrow-left",
                 "pages": [
                   "guides/porting/overview",
@@ -59,6 +59,7 @@
                   "guides/porting/verizon",
                   "guides/porting/t-mobile",
                   "guides/porting/att",
+                  "guides/porting/zoom",
                   "guides/porting/sms-hosting",
                   "guides/porting/port-completed"
                 ]
