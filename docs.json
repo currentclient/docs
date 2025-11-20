@@ -46,6 +46,7 @@
                 "icon": "arrow-right-arrow-left",
                 "pages": [
                   "guides/porting/overview",
+                  "guides/porting/att",
                   {
                     "group": "Google Voice",
                     "icon": "/images/logos/google-voice.svg",
@@ -54,14 +55,13 @@
                       "guides/porting/google-voice/business"
                     ]
                   },
-                  "guides/porting/vonage",
                   "guides/porting/myrepchat",
-                  "guides/porting/verizon",
                   "guides/porting/t-mobile",
-                  "guides/porting/att",
+                  "guides/porting/verizon",
+                  "guides/porting/vonage",
                   "guides/porting/zoom",
-                  "guides/porting/sms-hosting",
-                  "guides/porting/port-completed"
+                  "guides/porting/port-completed",
+                  "guides/porting/sms-hosting"
                 ]
               },
               "guides/getting-started/whats-next"
