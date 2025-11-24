@@ -56,6 +56,7 @@
                     ]
                   },
                   "guides/porting/myrepchat",
+                  "guides/porting/ringcentral",
                   "guides/porting/t-mobile",
                   "guides/porting/verizon",
                   "guides/porting/vonage",
