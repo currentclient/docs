@@ -113,7 +113,8 @@
                 "pages": [
                   "guides/admin/account-structure",
                   "guides/admin/workspace",
-                  "guides/admin/how-do-i-add-a-workspace"
+                  "guides/admin/how-do-i-add-a-workspace",
+                  "guides/admin/teammember-setup"
                 ]
               },
               {
