@@ -47,6 +47,7 @@
                 "pages": [
                   "guides/porting/overview",
                   "guides/porting/att",
+                  "guides/porting/dialpad",
                   {
                     "group": "Google Voice",
                     "icon": "/images/logos/google-voice.svg",
