@@ -66,6 +66,7 @@
                   "guides/porting/sms-hosting"
                 ]
               },
+              "guides/getting-started/setup-archiving",
               "guides/getting-started/whats-next"
             ]
           },
@@ -140,6 +141,33 @@
                   "guides/integrations/slack",
                   "guides/integrations/zapier",
                   "guides/integrations/make"
+                ]
+              },
+              {
+                "group": "Archiving",
+                "icon": "box-archive",
+                "pages": [
+                  "guides/archiving/overview",
+                  "guides/archiving/archive-intel",
+                  "guides/archiving/comply",
+                  "guides/archiving/email-archive",
+                  "guides/archiving/erado",
+                  "guides/archiving/global-relay",
+                  "guides/archiving/google",
+                  "guides/archiving/greenboard",
+                  "guides/archiving/hadrius",
+                  "guides/archiving/intradyn",
+                  "guides/archiving/messagewatcher",
+                  "guides/archiving/microsoft-outlook",
+                  "guides/archiving/mirrorweb",
+                  "guides/archiving/myriacompliance",
+                  "guides/archiving/patrina",
+                  "guides/archiving/presults",
+                  "guides/archiving/proofpoint",
+                  "guides/archiving/ria-comp-tech",
+                  "guides/archiving/slack-archive",
+                  "guides/archiving/smarsh",
+                  "guides/archiving/xy-archive"
                 ]
               }
             ]
