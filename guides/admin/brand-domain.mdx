@@ -1,0 +1,118 @@
+---
+title: "Brand domain"
+description: "Set up a custom subdomain for branded links to videos, voice memos, and shared content"
+---
+
+## What is a brand domain?
+
+A brand domain lets you use your own subdomain for all the links you share with clients. Instead of generic links, your videos, voice memos, and other shared content will use your branded URL - like `go.yourcompany.com`.
+
+This keeps your brand front and center and makes your links instantly recognizable to clients.
+
+## Why set up a brand domain?
+
+- **Brand recognition** - Clients see your domain, not a third-party URL
+- **Professional appearance** - Branded links look more polished and trustworthy
+- **Consistent experience** - All your shared content stays on-brand
+
+## What uses your brand domain?
+
+Once configured, your custom subdomain is used for:
+
+- Video messages you share
+- Voice memos
+- Other short URLs and shared content
+
+## How to set it up
+
+You'll need access to your domain's DNS settings to add a CNAME record. This is typically managed through your domain registrar (like GoDaddy, Namecheap, or Cloudflare) or your web hosting provider.
+
+<Steps>
+  <Step title="Go to workspace settings">
+    Head to your [workspace settings](https://app.currentclient.com/app/settings/brand) to access the brand domain configuration.
+  </Step>
+
+{" "}
+<Step title="Choose your subdomain">
+  Decide what subdomain you'd like to use. We recommend `go` (e.g.,
+  `go.yourcompany.com`), but you can choose something else like `links` or
+  `share`.
+</Step>
+
+{" "}
+<Step title="Open your DNS settings">
+  Log into your domain registrar or DNS provider and navigate to your DNS
+  settings or DNS management page.
+</Step>
+
+  <Step title="Add the CNAME record">
+    Create a new DNS record with these values:
+
+    | Field | Value |
+    |-------|-------|
+    | Type | `CNAME` |
+    | Name | `go` (or your chosen subdomain) |
+    | Value | `cname.currentclient.io` |
+    | TTL | `86400` (or "Auto" if that's an option) |
+
+    <Tip>
+      The "Name" field is just the subdomain part - enter `go`, not `go.yourcompany.com`. Your DNS provider will automatically append your domain.
+    </Tip>
+
+  </Step>
+
+{" "}
+<Step title="Save and wait for propagation">
+  Save your DNS changes. DNS propagation can take anywhere from a few minutes to
+  24 hours, though it's usually pretty quick.
+</Step>
+
+  <Step title="Enter your domain in CurrentClient">
+    Back in your workspace settings, enter your brand domain (e.g., `go.yourcompany.com`). Click **Save** and then **Refresh** to verify the connection.
+  </Step>
+</Steps>
+
+## Verifying your setup
+
+After adding the CNAME record and configuring it in CurrentClient, use the **Refresh** button to check verification status. If it shows "Not verified," give it a bit more time for DNS propagation and try again.
+
+<Info>
+  DNS changes can take up to 24 hours to fully propagate, though most updates
+  are visible within an hour or two.
+</Info>
+
+## Common DNS providers
+
+Here's where to find DNS settings for popular providers:
+
+- **GoDaddy** - My Products → DNS → Manage Zones
+- **Namecheap** - Domain List → Manage → Advanced DNS
+- **Cloudflare** - Select your domain → DNS → Records
+- **Google Domains** - My domains → DNS
+- **Squarespace** - Settings → Domains → DNS Settings
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="My domain shows 'Not verified'">
+    DNS propagation can take time. Wait 15-30 minutes and click **Refresh** again. If it's still not working after a few hours, double-check that you entered the CNAME value exactly as `cname.currentclient.io`.
+  </Accordion>
+
+{" "}
+<Accordion title="I can't find my DNS settings">
+  Your DNS might be managed separately from your domain registrar. Check if
+  you're using a service like Cloudflare, or contact your web hosting provider
+  for help locating DNS settings.
+</Accordion>
+
+{" "}
+<Accordion title="Can I use a different subdomain?">
+  Yes, you can use any subdomain you'd like - just update the "Name" field in
+  your CNAME record to match. Popular choices include `go`, `links`, `share`, or
+  `content`.
+</Accordion>
+
+  <Accordion title="Will this affect my existing website?">
+    No, adding a CNAME record for a subdomain like `go.yourcompany.com` won't affect your main website at `yourcompany.com` or `www.yourcompany.com`. Subdomains are independent.
+  </Accordion>
+</AccordionGroup>
