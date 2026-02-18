@@ -169,6 +169,11 @@
                   "guides/archiving/smarsh",
                   "guides/archiving/xy-archive"
                 ]
+              },
+              {
+                "group": "Best practices",
+                "icon": "lightbulb",
+                "pages": ["guides/best-practices/dedicated-number"]
               }
             ]
           },
