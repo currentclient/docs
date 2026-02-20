@@ -174,7 +174,8 @@
                 "group": "Best practices",
                 "icon": "lightbulb",
                 "pages": ["guides/best-practices/dedicated-number"]
-              }
+              },
+              "guides/smart-nudges"
             ]
           },
           {
