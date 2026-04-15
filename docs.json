@@ -194,20 +194,6 @@
             ]
           }
         ]
-      },
-      {
-        "tab": "API",
-        "groups": [
-          {
-            "group": "API",
-            "pages": ["api-reference/introduction"]
-          },
-          {
-            "group": "Make API",
-            "openapi": "https://users.api.currentclient.com/openapi.json",
-            "pages": ["POST /api/v1/make/send-message"]
-          }
-        ]
       }
     ]
   },
