@@ -30,6 +30,10 @@
   },
   "redirects": [
     {
+      "source": "/guides/getting-started",
+      "destination": "https://www.currentclient.com/learn/getting-started"
+    },
+    {
       "source": "/:slug+",
       "destination": "/"
     }
